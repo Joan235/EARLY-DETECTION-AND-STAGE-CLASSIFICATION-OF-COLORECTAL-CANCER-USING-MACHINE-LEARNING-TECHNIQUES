@@ -1,0 +1,331 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="mb-8">
+  <h1 class="text-4xl font-bold gradient-success bg-clip-text text-transparent mb-4">📈 Stage Classification</h1>
+  <p class="text-gray-600">Use clinical patient data to estimate the colorectal cancer stage.</p>
+{% if message %}
+<div class="mt-4 bg-red-100 border-l-4 border-red-500 text-red-800 p-4 rounded-lg">
+  <i class="fas fa-exclamation-triangle mr-2"></i>{{ message }}
+</div>
+{% endif %}
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+  <!-- Form Section -->
+  <div class="lg:col-span-1">
+    <form id="stage-form" class="bg-white p-6 rounded-2xl card-shadow space-y-4">
+      {% if not model_ok %}
+      <div class="rounded-lg border border-yellow-300 bg-yellow-50 p-3 text-sm text-yellow-800">
+        <i class="fas fa-exclamation-triangle mr-2"></i>Prediction is currently unavailable because the stage model is not loaded.
+      </div>
+      {% endif %}
+      <div class="bg-gradient-to-r from-blue-50 to-indigo-50 p-4 rounded-lg mb-4">
+        <h3 class="font-bold text-blue-900 mb-3"><i class="fas fa-user-medical mr-2"></i>Clinical Data</h3>
+        <div class="space-y-3">
+          <div>
+            <label class="block text-sm font-semibold text-gray-700 mb-1">👤 Age</label>
+            <input type="number" id="age" class="w-full border-2 border-blue-300 p-2 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition" min="0" max="120" placeholder="Enter age" />
+          </div>
+          <div>
+            <label class="block text-sm font-semibold text-gray-700 mb-1">⚖️ BMI</label>
+            <input type="number" id="bmi" class="w-full border-2 border-blue-300 p-2 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition" step="0.1" placeholder="Enter BMI" />
+          </div>
+          <div>
+            <label class="block text-sm font-semibold text-gray-700 mb-1">👤 Gender</label>
+            <select id="gender" class="w-full border-2 border-blue-300 p-2 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition">
+              <option value="" disabled selected>Select gender</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-sm font-semibold text-gray-700 mb-1">🏙️ Urban / Rural</label>
+            <select id="urban_or_rural" class="w-full border-2 border-blue-300 p-2 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition">
+              <option value="" disabled selected>Select area</option>
+              <option value="Urban">Urban</option>
+              <option value="Rural">Rural</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-gradient-to-r from-amber-50 to-yellow-50 p-4 rounded-lg mb-4">
+        <h3 class="font-bold text-amber-900 mb-3"><i class="fas fa-heartbeat mr-2"></i>Lifestyle & Status</h3>
+        <div class="space-y-3">
+          <div>
+            <label class="block text-sm font-semibold text-gray-700 mb-1">🚬 Smoking</label>
+            <select id="smoke" class="w-full border-2 border-amber-300 p-2 rounded-lg focus:border-amber-500 focus:ring-2 focus:ring-amber-200 outline-none transition">
+              <option value="" disabled selected>Select smoking status</option>
+              <option value="Current Smoker">Current Smoker</option>
+              <option value="Former Smoker">Former Smoker</option>
+              <option value="Never Smoked">Never Smoked</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-sm font-semibold text-gray-700 mb-1">🍽️ Diet Type</label>
+            <select id="diet_type" class="w-full border-2 border-amber-300 p-2 rounded-lg focus:border-amber-500 focus:ring-2 focus:ring-amber-200 outline-none transition">
+              <option value="" disabled selected>Select diet type</option>
+              <option value="High Fiber">High Fiber</option>
+              <option value="Vegetarian">Vegetarian</option>
+              <option value="Mediterranean">Mediterranean</option>
+              <option value="Western">Western</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-sm font-semibold text-gray-700 mb-1">🏃 Physical Activity Level</label>
+            <select id="physical_activity" class="w-full border-2 border-amber-300 p-2 rounded-lg focus:border-amber-500 focus:ring-2 focus:ring-amber-200 outline-none transition">
+              <option value="" disabled selected>Select activity level</option>
+              <option value="Sedentary">Sedentary</option>
+              <option value="Lightly Active">Lightly Active</option>
+              <option value="Moderately Active">Moderately Active</option>
+              <option value="Very Active">Very Active</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-sm font-semibold text-gray-700 mb-1">💰 Socioeconomic Status</label>
+            <select id="ses" class="w-full border-2 border-amber-300 p-2 rounded-lg focus:border-amber-500 focus:ring-2 focus:ring-amber-200 outline-none transition">
+              <option value="" disabled selected>Select socioeconomic status</option>
+              <option value="Low">Low</option>
+              <option value="Middle">Middle</option>
+              <option value="High">High</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-sm font-semibold text-gray-700 mb-1">🧬 Family History of CRC</label>
+            <select id="family_history" class="w-full border-2 border-amber-300 p-2 rounded-lg focus:border-amber-500 focus:ring-2 focus:ring-amber-200 outline-none transition">
+              <option value="" disabled selected>Select family history</option>
+              <option value="No">No</option>
+              <option value="Yes">Yes</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-sm font-semibold text-gray-700 mb-1">🩺 Previous Cancer History</label>
+            <select id="previous_cancer_history" class="w-full border-2 border-amber-300 p-2 rounded-lg focus:border-amber-500 focus:ring-2 focus:ring-amber-200 outline-none transition">
+              <option value="" disabled selected>Select prior cancer history</option>
+              <option value="No">No</option>
+              <option value="Yes">Yes</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-sm font-semibold text-gray-700 mb-1">🍷 Alcohol Consumption</label>
+            <select id="alcohol" class="w-full border-2 border-amber-300 p-2 rounded-lg focus:border-amber-500 focus:ring-2 focus:ring-amber-200 outline-none transition">
+              <option value="" disabled selected>Select consumption</option>
+              <option value="None">None</option>
+              <option value="Moderate">Moderate</option>
+              <option value="Heavy">Heavy</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-sm font-semibold text-gray-700 mb-1">🥩 Red Meat Consumption</label>
+            <select id="red_meat" class="w-full border-2 border-amber-300 p-2 rounded-lg focus:border-amber-500 focus:ring-2 focus:ring-amber-200 outline-none transition">
+              <option value="" disabled selected>Select red meat intake</option>
+              <option value="Low">Low</option>
+              <option value="Medium">Medium</option>
+              <option value="High">High</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-sm font-semibold text-gray-700 mb-1">🌾 Fiber Consumption</label>
+            <select id="fiber" class="w-full border-2 border-amber-300 p-2 rounded-lg focus:border-amber-500 focus:ring-2 focus:ring-amber-200 outline-none transition">
+              <option value="" disabled selected>Select fiber intake</option>
+              <option value="Low">Low</option>
+              <option value="Medium">Medium</option>
+              <option value="High">High</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+        <div class="flex gap-2 pt-4">
+        <button type="submit" class="flex-1 gradient-success text-white font-bold py-3 rounded-lg hover:shadow-lg transition transform hover:scale-105" {% if not model_ok %}disabled title="Model not loaded" style="opacity:0.6;cursor:not-allowed;"{% endif %}>
+          <i class="fas fa-bolt mr-2"></i>Predict Stage
+        </button>
+        <a href="/survival" class="flex-1 bg-gradient-to-r from-blue-500 to-blue-600 text-white font-bold py-3 rounded-lg text-center hover:shadow-lg transition transform hover:scale-105">
+          <i class="fas fa-chart-line mr-2"></i>Dashboard
+        </a>
+      </div>
+    </form>
+  </div>
+
+  <!-- Results Section -->
+  <div class="lg:col-span-2">
+    <div id="stage-result" class="bg-white p-6 rounded-2xl card-shadow hidden">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+          <div id="stage-badge" class="inline-block px-6 py-4 rounded-xl text-white font-bold text-2xl w-full text-center mb-4"></div>
+          <div id="urgency" class="p-4 rounded-lg bg-amber-50 border-l-4 border-amber-500 text-amber-900 text-sm font-semibold hidden">
+            <i class="fas fa-exclamation-triangle mr-2"></i><span id="urgency-text"></span>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold text-gray-800 mb-4"><i class="fas fa-chart-pie mr-2 text-teal-600"></i>Stage Confidence</h3>
+          <canvas id="prob-bar" height="160"></canvas>
+        </div>
+      </div>
+      <div class="mt-6 bg-slate-50 p-5 rounded-2xl border border-slate-200">
+        <h3 class="text-lg font-semibold text-slate-900 mb-3">Why this stage was predicted</h3>
+        <p id="stage-explanation" class="text-sm leading-6 text-slate-700"></p>
+      </div>
+    </div>
+
+    <div id="error-card" class="bg-gradient-to-r from-red-100 to-orange-100 border-l-4 border-red-500 text-red-800 p-4 rounded-lg card-shadow hidden">
+      <i class="fas fa-exclamation-triangle mr-2"></i><span id="error-text"></span>
+    </div>
+
+    <div class="bg-white p-6 rounded-2xl card-shadow">
+      <h3 class="text-lg font-bold text-gray-800 mb-4"><i class="fas fa-graduation-cap mr-2 text-indigo-600"></i>TNM Staging System</h3>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-3 text-xs">
+        <div class="p-3 rounded-lg bg-gradient-to-br from-green-100 to-emerald-100 border-l-4 border-green-500">
+          <div class="font-bold text-green-900">Stage I</div>
+          <div class="text-green-700 text-xs">Early localized cancer</div>
+        </div>
+        <div class="p-3 rounded-lg bg-gradient-to-br from-blue-100 to-cyan-100 border-l-4 border-blue-500">
+          <div class="font-bold text-blue-900">Stage II</div>
+          <div class="text-blue-700 text-xs">Locally advanced</div>
+        </div>
+        <div class="p-3 rounded-lg bg-gradient-to-br from-orange-100 to-amber-100 border-l-4 border-orange-500">
+          <div class="font-bold text-orange-900">Stage III</div>
+          <div class="text-orange-700 text-xs">Regional spread</div>
+        </div>
+        <div class="p-3 rounded-lg bg-gradient-to-br from-red-100 to-pink-100 border-l-4 border-red-500">
+          <div class="font-bold text-red-900">Stage IV</div>
+          <div class="text-red-700 text-xs">Metastatic disease</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+const modelAvailable = {{ 'true' if model_ok else 'false' }};
+document.getElementById('stage-form').addEventListener('submit', function(e){
+  e.preventDefault();
+  if (!modelAvailable) {
+    document.getElementById('error-text').textContent = 'Prediction is unavailable because the stage model is not loaded.';
+    document.getElementById('error-card').classList.remove('hidden');
+    document.getElementById('stage-result').classList.add('hidden');
+    return;
+  }
+
+  const getValue = (id) => {
+    const el = document.getElementById(id);
+    return el ? el.value : '';
+  };
+
+  const requiredFields = [
+    'age',
+    'bmi',
+    'gender',
+    'urban_or_rural',
+    'smoke',
+    'diet_type',
+    'physical_activity',
+    'ses',
+    'family_history',
+    'previous_cancer_history',
+    'alcohol',
+    'red_meat',
+    'fiber'
+  ];
+
+  const emptyFields = requiredFields.filter(id => {
+    const value = getValue(id);
+    return value === '' || value === null || value === undefined;
+  });
+
+  if (emptyFields.length > 0) {
+    document.getElementById('error-text').textContent = 'Please complete all patient fields before predicting.';
+    document.getElementById('error-card').classList.remove('hidden');
+    document.getElementById('stage-result').classList.add('hidden');
+    return;
+  }
+
+  const payload = {
+    age: Number(getValue('age')),
+    bmi: Number(getValue('bmi')),
+    smoke: getValue('smoke'),
+    diet_type: getValue('diet_type'),
+    physical_activity: getValue('physical_activity'),
+    ses: getValue('ses'),
+    gender: getValue('gender'),
+    urban_or_rural: getValue('urban_or_rural'),
+    family_history: getValue('family_history'),
+    previous_cancer_history: getValue('previous_cancer_history'),
+    alcohol: getValue('alcohol'),
+    red_meat: getValue('red_meat'),
+    fiber: getValue('fiber'),
+  };
+
+  fetch('/api/predict-stage', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify(payload)
+  })
+  .then(r => r.json())
+  .then(data => {
+    if(data.error){
+      document.getElementById('error-text').textContent = data.error;
+      document.getElementById('error-card').classList.remove('hidden');
+      document.getElementById('stage-result').classList.add('hidden');
+    } else {
+      showStage(data.stage, data.probabilities, data.urgency, data.explanation);
+    }
+  })
+  .catch(e => {
+    document.getElementById('error-text').textContent = 'Prediction failed: ' + e;
+    document.getElementById('error-card').classList.remove('hidden');
+  });
+});
+
+let probChart=null;
+function showStage(stage, probs, urgency, explanation){
+  document.getElementById('stage-result').classList.remove('hidden');
+  document.getElementById('error-card').classList.add('hidden');
+  
+  const badge = document.getElementById('stage-badge');
+  const colors = {I:'#10b981', II:'#3b82f6', III:'#f59e0b', IV:'#ef4444'};
+  const icons = {I:'🟢', II:'🔵', III:'🟠', IV:'🔴'};
+  
+  badge.textContent = icons[stage] + ' Stage ' + stage;
+  badge.style.backgroundColor = colors[stage];
+  badge.style.borderRadius = '12px';
+  
+  // urgency message
+  const urgencyEl = document.getElementById('urgency');
+  if(urgency && urgency.length > 0){
+    document.getElementById('urgency-text').textContent = urgency;
+    urgencyEl.classList.remove('hidden');
+  } else {
+    urgencyEl.classList.add('hidden');
+  }
+  
+  // explanation text
+  const explanationEl = document.getElementById('stage-explanation');
+  explanationEl.textContent = explanation || 'The model predicts this stage based on the patient profile and clinical risk factors.';
+  
+  // probability bar
+  const stages = ['I', 'II', 'III', 'IV'];
+  const values = stages.map(s => Math.round((probs[s] || 0) * 100));
+  const ctx = document.getElementById('prob-bar').getContext('2d');
+  if(probChart) probChart.destroy();
+  probChart = new Chart(ctx, {
+    type:'bar',
+    data:{
+      labels: stages,
+      datasets:[{
+        label:'Probability',
+        data: values,
+        backgroundColor:['#10b981','#3b82f6','#f59e0b','#ef4444'],
+        borderRadius: 8
+      }]
+    },
+    options:{
+      plugins:{legend:{display:false}},
+      scales:{y:{beginAtZero:true, max:100}}
+    }
+  });
+}
+</script>
+
+{% endblock %}

@@ -1,0 +1,1001 @@
+Participant_ID,Age,Gender,BMI,Lifestyle,Ethnicity,Family_History_CRC,Pre-existing Conditions,Carbohydrates (g),Proteins (g),Fats (g),Vitamin A (IU),Vitamin C (mg),Iron (mg),CRC_Risk
+1001,63,Female,21.6,Sedentary,Hispanic,Yes,Diabetes,245,98,41,4176,97,15.3,0
+1002,76,Male,31.4,Smoker,Hispanic,No,Obesity,398,56,61,3400,38,9.5,1
+1003,53,Female,24.3,Moderate Exercise,Asian,No,None,375,79,59,5104,51,14.4,0
+1004,39,Male,19.5,Sedentary,Asian,Yes,None,325,98,64,6050,47,7.3,0
+1005,67,Male,34.5,Moderate Exercise,Asian,No,Obesity,169,65,54,5233,105,12.0,0
+1006,32,Male,33.1,Moderate Exercise,African American,No,Diabetes,188,100,99,5445,72,12.6,0
+1007,45,Male,33.8,Smoker,Asian,Yes,Hypertension,209,91,88,7700,68,13.8,0
+1008,63,Female,34.9,Active,Hispanic,No,Diabetes,215,66,68,5835,102,12.7,0
+1009,43,Female,21.4,Smoker,Hispanic,Yes,Hypertension,214,112,47,8906,35,12.4,0
+1010,47,Female,25.0,Active,Caucasian,Yes,Obesity,328,94,76,8559,112,10.0,0
+1011,35,Male,31.0,Active,African American,Yes,Obesity,273,56,88,5513,77,6.1,0
+1012,35,Female,30.0,Smoker,Caucasian,Yes,None,313,76,91,4773,36,6.3,1
+1013,48,Male,21.0,Smoker,Hispanic,No,Hypertension,301,59,72,8649,109,11.5,1
+1014,77,Female,32.0,Active,Caucasian,Yes,Diabetes,395,83,61,4096,98,10.3,1
+1015,60,Male,22.2,Smoker,Hispanic,Yes,Obesity,304,85,89,3928,45,12.7,0
+1016,64,Male,22.2,Active,Caucasian,No,Diabetes,279,74,86,4951,30,9.6,0
+1017,48,Male,27.4,Moderate Exercise,Asian,Yes,None,308,55,44,4973,66,15.3,0
+1018,27,Female,28.3,Smoker,Caucasian,Yes,Hypertension,206,73,78,4554,112,18.0,1
+1019,46,Female,28.1,Moderate Exercise,Asian,Yes,Hypertension,227,67,57,5778,66,9.5,0
+1020,77,Female,20.0,Sedentary,Asian,Yes,Obesity,343,55,77,7421,110,7.9,0
+1021,26,Female,33.0,Moderate Exercise,African American,No,Hypertension,178,78,93,3994,93,6.7,0
+1022,48,Male,22.9,Moderate Exercise,Asian,Yes,Obesity,164,74,92,3612,119,14.2,0
+1023,68,Female,20.6,Active,Asian,No,None,161,104,76,5593,115,11.7,0
+1024,54,Female,33.2,Moderate Exercise,Caucasian,No,Hypertension,250,95,69,3595,91,7.8,0
+1025,62,Male,34.3,Smoker,Hispanic,Yes,Obesity,305,73,90,8016,101,14.8,1
+1026,26,Male,32.7,Active,African American,Yes,Diabetes,233,75,70,3841,90,7.2,0
+1027,45,Male,31.9,Sedentary,Asian,Yes,Obesity,274,77,49,8321,62,13.3,0
+1028,57,Female,29.3,Smoker,African American,Yes,Hypertension,252,52,54,7439,95,12.9,1
+1029,36,Male,27.6,Sedentary,Caucasian,No,None,173,87,81,8972,59,16.0,0
+1030,46,Male,19.9,Moderate Exercise,Asian,No,Hypertension,298,110,98,3858,49,5.8,0
+1031,68,Male,25.2,Smoker,Caucasian,No,Hypertension,287,100,87,8519,89,18.3,0
+1032,49,Female,24.6,Smoker,African American,Yes,Obesity,259,97,83,3444,111,15.5,0
+1033,73,Male,22.8,Sedentary,Caucasian,No,Diabetes,227,70,57,4788,103,8.2,0
+1034,51,Female,30.4,Smoker,African American,Yes,Hypertension,250,103,62,7317,53,7.8,1
+1035,66,Female,26.7,Smoker,Caucasian,Yes,Diabetes,295,105,72,6454,33,11.5,0
+1036,52,Male,19.8,Smoker,African American,Yes,Obesity,365,108,55,6952,66,17.3,0
+1037,40,Male,22.1,Moderate Exercise,Hispanic,Yes,Diabetes,291,100,93,7687,33,17.6,0
+1038,39,Female,29.8,Sedentary,Caucasian,Yes,Obesity,311,69,77,4030,106,12.8,0
+1039,71,Male,19.8,Smoker,Caucasian,No,None,277,108,74,4295,118,17.9,0
+1040,75,Male,32.5,Active,Hispanic,No,Diabetes,207,58,73,8113,106,5.1,0
+1041,68,Female,26.7,Active,Hispanic,Yes,Diabetes,225,50,67,5063,47,5.5,0
+1042,79,Female,26.4,Active,Caucasian,No,None,299,78,41,4447,117,18.7,0
+1043,76,Male,28.3,Active,Hispanic,Yes,Diabetes,397,112,69,5045,95,16.6,0
+1044,27,Female,32.1,Moderate Exercise,Asian,Yes,None,347,105,52,7619,77,11.8,0
+1045,61,Male,24.2,Smoker,African American,Yes,Hypertension,185,117,80,5850,62,16.3,1
+1046,75,Male,29.7,Sedentary,African American,No,Obesity,322,84,55,6824,87,19.3,0
+1047,31,Male,27.8,Smoker,African American,Yes,None,313,52,98,5068,112,16.6,1
+1048,45,Female,22.9,Moderate Exercise,Asian,Yes,Diabetes,171,56,44,6761,102,17.6,0
+1049,33,Male,33.0,Active,Hispanic,No,None,355,76,94,5275,57,16.4,0
+1050,63,Male,31.7,Moderate Exercise,Hispanic,No,Diabetes,276,50,67,4808,64,7.5,0
+1051,42,Male,29.4,Smoker,Caucasian,No,Hypertension,229,93,92,4311,39,17.5,1
+1052,28,Female,32.5,Sedentary,Hispanic,Yes,None,338,90,78,7055,94,7.9,0
+1053,49,Female,32.8,Moderate Exercise,Caucasian,Yes,Hypertension,249,91,84,8402,71,18.4,0
+1054,38,Female,30.2,Sedentary,Asian,No,Obesity,333,82,59,5451,114,11.9,0
+1055,74,Female,32.3,Moderate Exercise,African American,Yes,Diabetes,366,99,63,4089,38,15.2,1
+1056,33,Female,30.0,Sedentary,African American,No,Diabetes,245,112,66,4672,89,12.5,0
+1057,50,Male,29.7,Sedentary,African American,No,Hypertension,310,86,69,6675,44,6.4,0
+1058,77,Female,28.7,Active,Hispanic,Yes,Obesity,322,108,97,7532,86,9.4,0
+1059,26,Female,30.9,Sedentary,Caucasian,Yes,None,313,97,84,7924,98,19.8,0
+1060,44,Female,21.1,Active,Caucasian,No,None,297,54,66,7354,51,19.4,0
+1061,52,Male,33.0,Smoker,Asian,No,Diabetes,167,97,65,5003,93,9.8,1
+1062,71,Female,32.9,Smoker,Hispanic,No,Hypertension,187,52,46,7198,70,19.9,1
+1063,31,Female,19.0,Active,Asian,No,Hypertension,344,96,81,8088,116,17.7,0
+1064,68,Male,32.1,Active,Caucasian,Yes,None,300,111,86,7864,100,14.2,1
+1065,32,Female,20.6,Moderate Exercise,Caucasian,No,Obesity,373,63,92,4124,85,5.6,0
+1066,71,Male,24.0,Moderate Exercise,African American,No,Obesity,258,112,98,4221,52,18.5,0
+1067,59,Male,30.8,Moderate Exercise,Hispanic,No,None,272,110,77,5860,54,13.4,0
+1068,38,Male,21.2,Smoker,Caucasian,Yes,None,293,80,44,5273,35,18.0,0
+1069,41,Male,32.0,Moderate Exercise,African American,Yes,Hypertension,336,66,62,5990,63,17.5,0
+1070,60,Male,32.2,Sedentary,Hispanic,No,Obesity,346,73,67,5510,92,17.5,0
+1071,74,Female,26.9,Sedentary,Asian,Yes,None,345,72,73,3236,38,15.5,0
+1072,64,Male,18.6,Moderate Exercise,Hispanic,Yes,None,298,99,92,4144,89,9.4,0
+1073,28,Male,23.2,Sedentary,Hispanic,Yes,Diabetes,253,119,54,6253,78,10.0,0
+1074,26,Female,28.7,Smoker,Caucasian,No,None,392,76,71,6782,80,9.6,0
+1075,30,Male,34.7,Sedentary,Caucasian,No,None,355,64,65,3766,89,5.3,0
+1076,78,Female,28.9,Smoker,Hispanic,Yes,Obesity,380,99,87,5681,99,13.7,1
+1077,66,Female,22.8,Active,Caucasian,No,Hypertension,372,85,70,8086,66,15.5,0
+1078,28,Female,29.0,Active,Caucasian,No,Obesity,355,57,58,5665,60,17.8,0
+1079,78,Male,27.4,Active,Caucasian,Yes,Hypertension,347,52,48,4759,70,7.1,0
+1080,53,Male,31.4,Active,African American,Yes,Diabetes,289,111,68,6491,91,13.2,1
+1081,42,Male,20.3,Sedentary,African American,No,None,293,96,93,5815,87,5.1,0
+1082,50,Female,31.1,Moderate Exercise,Hispanic,Yes,Diabetes,230,110,97,6513,43,6.4,0
+1083,68,Male,27.4,Sedentary,Caucasian,No,Hypertension,386,81,90,3495,65,5.8,0
+1084,58,Male,34.4,Smoker,African American,No,Obesity,236,62,78,8143,65,15.9,0
+1085,34,Male,24.1,Sedentary,Hispanic,Yes,Obesity,291,50,43,6180,108,6.2,0
+1086,60,Female,28.9,Sedentary,Caucasian,No,Diabetes,210,83,42,8822,37,15.7,0
+1087,38,Female,33.9,Smoker,Asian,No,Hypertension,348,111,95,6930,55,8.7,0
+1088,55,Male,20.2,Active,Caucasian,Yes,Diabetes,195,80,68,5072,65,18.2,0
+1089,72,Male,34.0,Active,Caucasian,Yes,Diabetes,181,113,91,3337,77,17.2,1
+1090,39,Male,29.9,Active,African American,Yes,None,164,74,50,6949,114,19.4,0
+1091,32,Male,19.6,Moderate Exercise,Hispanic,No,Diabetes,193,87,72,6108,57,18.3,0
+1092,38,Female,23.5,Smoker,Hispanic,Yes,None,294,63,77,4817,97,19.0,0
+1093,47,Female,30.2,Smoker,African American,Yes,None,318,57,97,3136,91,17.9,1
+1094,64,Female,19.6,Sedentary,Caucasian,Yes,Obesity,203,103,50,5555,109,15.4,0
+1095,45,Female,28.1,Moderate Exercise,Asian,Yes,None,388,51,66,7415,115,7.6,0
+1096,40,Male,24.2,Active,Caucasian,No,None,193,105,72,8959,105,9.1,0
+1097,69,Male,28.7,Moderate Exercise,Caucasian,No,Obesity,247,110,60,3915,109,8.2,0
+1098,42,Male,19.3,Smoker,Asian,Yes,Diabetes,154,71,78,8301,80,14.1,0
+1099,71,Female,32.9,Smoker,African American,No,Hypertension,258,84,70,8993,71,12.6,1
+1100,77,Male,34.6,Sedentary,Hispanic,Yes,Hypertension,176,65,77,6538,58,18.0,1
+1101,48,Female,34.5,Sedentary,African American,Yes,Hypertension,265,99,85,8021,111,19.3,0
+1102,50,Female,30.9,Smoker,African American,No,Diabetes,236,92,41,5100,39,11.1,0
+1103,49,Male,20.6,Active,Caucasian,No,None,253,66,66,5907,68,12.6,0
+1104,69,Male,31.0,Active,Hispanic,Yes,Hypertension,272,107,75,5914,111,19.6,1
+1105,65,Male,18.9,Moderate Exercise,Hispanic,Yes,Diabetes,355,51,50,8354,30,9.1,0
+1106,53,Female,18.9,Smoker,African American,No,None,228,53,86,4982,68,16.9,0
+1107,39,Male,23.8,Smoker,Asian,Yes,Obesity,192,88,57,6870,50,8.4,0
+1108,69,Female,26.6,Active,African American,No,Hypertension,246,55,98,7528,94,15.2,0
+1109,25,Male,31.2,Active,Asian,Yes,None,394,118,40,6567,44,8.8,0
+1110,49,Female,29.8,Smoker,Hispanic,Yes,Hypertension,180,118,74,3998,33,18.3,1
+1111,31,Female,25.9,Sedentary,African American,No,Hypertension,248,69,74,5147,89,13.4,0
+1112,33,Male,23.0,Smoker,Caucasian,No,Hypertension,166,113,70,8085,90,7.8,0
+1113,48,Female,35.0,Smoker,African American,No,None,369,65,67,7694,49,8.4,1
+1114,25,Female,25.5,Active,Hispanic,No,Diabetes,232,100,78,3395,39,12.4,0
+1115,68,Male,25.9,Active,Caucasian,No,None,259,86,40,6598,116,19.4,0
+1116,32,Female,21.2,Sedentary,Caucasian,No,Hypertension,331,118,64,7510,63,16.5,0
+1117,48,Male,31.6,Sedentary,Asian,No,None,339,91,82,3938,77,12.3,0
+1118,35,Female,29.9,Moderate Exercise,Caucasian,Yes,Obesity,364,106,77,4636,62,10.1,0
+1119,75,Male,22.1,Smoker,Caucasian,Yes,Diabetes,181,115,59,5724,90,13.2,0
+1120,41,Male,19.9,Active,African American,Yes,None,317,58,42,5510,39,16.2,0
+1121,32,Female,29.7,Sedentary,Hispanic,No,Obesity,290,113,90,7636,83,16.8,0
+1122,59,Female,29.3,Moderate Exercise,Asian,No,Diabetes,361,71,41,4649,113,9.9,0
+1123,59,Female,23.0,Moderate Exercise,African American,No,Obesity,184,83,57,6690,94,15.8,0
+1124,57,Female,34.2,Active,Caucasian,Yes,Diabetes,282,104,83,6435,106,14.9,1
+1125,29,Female,21.0,Active,Caucasian,No,None,350,78,49,6201,30,19.4,0
+1126,66,Male,25.6,Moderate Exercise,Asian,No,Obesity,178,87,44,7179,34,19.0,0
+1127,63,Female,34.1,Sedentary,Hispanic,Yes,Hypertension,219,67,48,7366,109,16.8,1
+1128,65,Male,25.4,Moderate Exercise,Asian,No,Obesity,302,114,41,5291,44,15.9,0
+1129,52,Male,29.0,Smoker,African American,Yes,Diabetes,244,50,73,7483,57,9.1,0
+1130,31,Female,25.1,Smoker,Asian,Yes,None,171,53,99,3213,52,17.7,0
+1131,33,Male,23.0,Active,Caucasian,No,Diabetes,343,53,77,6237,46,11.4,0
+1132,32,Male,34.7,Sedentary,African American,No,Obesity,322,76,70,6862,42,9.1,0
+1133,36,Male,25.3,Sedentary,Caucasian,No,Obesity,218,92,49,3058,43,10.8,0
+1134,58,Male,33.3,Smoker,Hispanic,Yes,Hypertension,368,108,89,8721,40,17.5,1
+1135,57,Female,22.3,Moderate Exercise,Caucasian,Yes,None,238,81,51,5930,57,7.2,0
+1136,72,Male,22.0,Active,Caucasian,Yes,None,221,82,75,7938,71,11.8,0
+1137,79,Female,19.0,Moderate Exercise,Asian,No,Obesity,396,77,93,5971,90,12.4,0
+1138,47,Female,29.3,Moderate Exercise,Caucasian,No,None,278,104,60,4527,93,5.5,0
+1139,48,Male,24.6,Moderate Exercise,African American,No,Hypertension,361,109,88,8825,60,7.9,0
+1140,61,Female,32.8,Sedentary,African American,No,Diabetes,321,119,86,3122,110,17.4,0
+1141,59,Female,26.3,Smoker,Hispanic,Yes,None,236,111,45,6719,102,17.5,0
+1142,68,Female,34.5,Sedentary,African American,Yes,Obesity,245,83,87,4436,39,9.4,1
+1143,64,Male,21.6,Smoker,Asian,Yes,Diabetes,224,105,88,4162,37,18.1,0
+1144,46,Female,32.8,Active,Hispanic,Yes,Diabetes,316,62,42,6300,50,16.6,0
+1145,51,Female,31.3,Active,African American,No,Hypertension,388,105,49,6345,106,11.3,0
+1146,59,Female,31.2,Moderate Exercise,Asian,No,Obesity,203,67,44,5486,88,16.2,0
+1147,25,Male,32.4,Smoker,African American,No,None,237,103,85,3561,79,19.4,0
+1148,59,Female,31.1,Smoker,African American,Yes,Obesity,352,92,65,6981,98,11.9,1
+1149,61,Male,28.8,Smoker,Caucasian,Yes,Diabetes,306,88,60,4737,99,8.6,1
+1150,71,Male,20.7,Moderate Exercise,African American,No,Obesity,203,110,84,3904,59,19.1,0
+1151,38,Male,19.0,Moderate Exercise,African American,No,None,367,91,65,6554,46,14.1,0
+1152,27,Male,33.7,Active,Asian,Yes,None,165,67,77,7490,104,6.6,0
+1153,25,Male,28.7,Sedentary,Asian,No,Hypertension,248,72,83,4726,49,13.6,0
+1154,29,Male,31.6,Smoker,Caucasian,Yes,None,169,103,65,5923,77,12.5,0
+1155,50,Female,26.4,Smoker,African American,Yes,None,195,79,47,6531,102,17.8,0
+1156,79,Male,20.4,Sedentary,Caucasian,Yes,Obesity,344,107,44,6906,31,13.0,0
+1157,38,Female,20.6,Smoker,African American,No,Obesity,342,117,54,8812,66,8.8,1
+1158,63,Female,29.8,Moderate Exercise,Hispanic,No,Diabetes,276,116,98,3934,30,15.1,0
+1159,51,Male,25.6,Moderate Exercise,Hispanic,Yes,Hypertension,207,67,55,8197,33,13.1,0
+1160,33,Female,21.8,Smoker,Caucasian,No,Obesity,330,56,40,8531,83,8.5,0
+1161,39,Female,26.6,Moderate Exercise,Caucasian,Yes,None,260,89,55,3074,54,13.6,0
+1162,39,Female,19.6,Moderate Exercise,Caucasian,Yes,Diabetes,278,119,76,3294,32,17.3,0
+1163,50,Female,28.1,Smoker,Asian,Yes,Obesity,230,114,42,3020,38,5.4,0
+1164,66,Male,22.9,Active,Asian,Yes,Hypertension,343,117,91,6242,115,14.5,0
+1165,37,Female,31.7,Sedentary,Asian,No,Hypertension,306,98,86,4038,116,10.2,0
+1166,75,Male,23.6,Moderate Exercise,Caucasian,Yes,Diabetes,233,101,70,8330,105,9.4,0
+1167,56,Female,26.0,Active,African American,Yes,Diabetes,219,78,52,7655,103,10.9,0
+1168,63,Female,18.7,Moderate Exercise,Hispanic,No,Diabetes,157,70,95,4109,63,10.1,0
+1169,73,Male,19.7,Moderate Exercise,Caucasian,Yes,Diabetes,178,58,55,8268,72,17.5,0
+1170,76,Female,25.0,Sedentary,Asian,Yes,Diabetes,261,96,94,6771,103,9.1,0
+1171,56,Female,26.4,Moderate Exercise,Asian,No,None,328,91,82,3371,51,16.0,0
+1172,28,Female,28.4,Sedentary,Caucasian,No,None,310,100,60,7913,99,6.4,0
+1173,54,Male,23.3,Sedentary,Caucasian,No,Obesity,280,105,41,4174,31,19.3,0
+1174,61,Female,30.0,Sedentary,Asian,Yes,Hypertension,337,100,93,4164,95,14.3,0
+1175,47,Male,32.7,Active,African American,No,None,312,119,66,4092,61,15.6,0
+1176,63,Female,31.4,Smoker,Asian,No,None,346,69,77,4283,45,9.5,0
+1177,69,Male,19.2,Active,Asian,Yes,None,368,76,65,5011,105,11.2,0
+1178,39,Male,26.4,Smoker,Caucasian,Yes,Obesity,257,87,97,3845,30,8.4,0
+1179,67,Female,20.2,Smoker,African American,Yes,Diabetes,353,114,98,4991,101,19.0,0
+1180,53,Female,22.5,Sedentary,Asian,Yes,Obesity,361,103,77,3520,77,12.3,0
+1181,60,Male,34.8,Moderate Exercise,Asian,Yes,Hypertension,258,73,85,7466,79,14.5,1
+1182,37,Male,20.9,Sedentary,Hispanic,No,Hypertension,169,96,64,8538,42,16.0,0
+1183,56,Female,26.7,Moderate Exercise,Caucasian,No,Hypertension,222,112,50,7196,44,10.6,0
+1184,31,Male,28.7,Smoker,Hispanic,No,Hypertension,316,106,47,7756,82,15.8,1
+1185,75,Female,30.1,Sedentary,Hispanic,Yes,None,153,104,47,8777,73,15.1,1
+1186,46,Female,27.7,Moderate Exercise,Asian,Yes,None,392,109,72,3242,37,15.6,0
+1187,52,Female,18.7,Active,Caucasian,Yes,Obesity,395,111,92,5800,103,12.3,0
+1188,26,Female,23.9,Moderate Exercise,African American,No,Diabetes,168,79,46,7607,75,10.7,0
+1189,66,Male,27.0,Sedentary,Asian,No,Hypertension,251,71,77,5896,98,8.3,0
+1190,69,Female,19.9,Active,African American,Yes,Obesity,368,78,60,5602,48,17.4,0
+1191,77,Male,24.3,Moderate Exercise,African American,No,None,322,90,47,5273,67,14.1,0
+1192,30,Female,19.0,Moderate Exercise,Caucasian,Yes,None,320,91,90,4541,40,11.7,0
+1193,52,Male,19.8,Moderate Exercise,Hispanic,No,Diabetes,290,114,93,5765,72,19.2,0
+1194,52,Female,25.0,Moderate Exercise,Caucasian,No,Diabetes,290,80,60,5114,49,5.7,0
+1195,68,Male,20.7,Moderate Exercise,African American,No,Diabetes,337,79,95,7491,49,17.8,0
+1196,68,Male,27.9,Active,Asian,Yes,Obesity,334,67,59,7707,50,20.0,0
+1197,44,Female,29.9,Smoker,African American,No,None,235,66,47,6083,111,18.3,0
+1198,54,Female,31.7,Active,Asian,No,None,369,87,97,8356,86,17.2,0
+1199,35,Female,21.8,Active,Asian,Yes,Diabetes,201,63,85,4857,79,10.6,0
+1200,79,Female,21.3,Active,Caucasian,No,Hypertension,260,105,70,3769,103,8.5,0
+1201,52,Male,20.2,Smoker,African American,Yes,Diabetes,330,71,89,4422,55,16.0,0
+1202,49,Female,29.0,Sedentary,Hispanic,Yes,Obesity,258,116,96,3406,59,9.6,0
+1203,63,Male,30.2,Smoker,African American,Yes,Diabetes,235,105,68,5972,102,7.6,1
+1204,57,Male,19.0,Active,African American,Yes,Diabetes,192,68,87,4872,60,16.8,0
+1205,25,Female,33.9,Moderate Exercise,Hispanic,Yes,Obesity,360,106,48,8599,71,9.7,0
+1206,51,Male,19.4,Moderate Exercise,Caucasian,No,Diabetes,349,93,54,5694,97,18.7,0
+1207,76,Male,27.4,Active,African American,Yes,None,393,84,69,5269,90,17.6,0
+1208,37,Male,30.2,Moderate Exercise,African American,Yes,Hypertension,349,50,65,8275,90,17.7,0
+1209,65,Male,32.9,Active,Asian,Yes,Diabetes,191,101,49,7749,99,16.6,1
+1210,27,Female,30.3,Moderate Exercise,African American,Yes,Obesity,239,119,68,4181,107,18.2,0
+1211,63,Female,31.7,Smoker,Hispanic,No,Hypertension,389,86,93,8072,97,17.1,0
+1212,30,Female,24.1,Sedentary,Asian,Yes,Obesity,264,114,55,4439,119,14.0,0
+1213,32,Female,31.9,Sedentary,Caucasian,No,Hypertension,175,100,75,6053,46,9.4,0
+1214,51,Male,19.8,Smoker,Asian,Yes,Hypertension,300,50,59,8463,48,18.3,1
+1215,33,Male,33.3,Smoker,Hispanic,No,Diabetes,192,70,84,6333,80,17.6,0
+1216,61,Female,27.5,Active,Hispanic,Yes,None,226,102,93,5897,99,12.1,0
+1217,57,Female,32.0,Active,Asian,Yes,Diabetes,305,65,76,5903,92,5.6,1
+1218,75,Female,26.0,Active,Caucasian,No,Obesity,286,110,61,3228,104,14.6,0
+1219,66,Male,29.1,Moderate Exercise,Asian,Yes,Obesity,169,103,46,6959,109,5.8,0
+1220,68,Female,27.2,Active,Caucasian,No,Hypertension,333,89,62,4893,59,18.9,0
+1221,48,Female,30.6,Smoker,Asian,Yes,Hypertension,360,75,80,4313,54,19.4,1
+1222,39,Female,19.8,Sedentary,Hispanic,No,None,389,114,79,4070,104,7.8,0
+1223,78,Male,19.5,Moderate Exercise,African American,Yes,Diabetes,188,113,68,3974,100,15.1,0
+1224,56,Male,22.6,Active,African American,Yes,Obesity,328,92,55,4738,55,6.4,0
+1225,56,Male,21.1,Moderate Exercise,Caucasian,No,Hypertension,161,66,77,6285,85,15.9,0
+1226,48,Male,32.9,Moderate Exercise,Caucasian,Yes,None,356,108,67,3757,51,10.2,0
+1227,65,Male,22.1,Active,Caucasian,Yes,Obesity,372,72,87,6095,118,15.2,0
+1228,76,Male,34.6,Moderate Exercise,Hispanic,Yes,Hypertension,332,56,77,3320,48,10.6,1
+1229,73,Male,24.1,Sedentary,Asian,Yes,Obesity,355,93,70,5321,60,7.2,0
+1230,73,Male,21.5,Smoker,Hispanic,Yes,None,160,102,53,3555,55,11.1,1
+1231,76,Female,31.5,Smoker,African American,Yes,None,303,83,92,7939,71,6.7,1
+1232,36,Female,29.4,Sedentary,Caucasian,No,Obesity,191,95,72,8432,70,13.7,0
+1233,63,Male,26.7,Moderate Exercise,Asian,No,Diabetes,304,117,96,4386,52,5.6,0
+1234,26,Male,27.7,Active,African American,No,Obesity,160,65,48,7763,76,12.9,0
+1235,27,Female,30.4,Moderate Exercise,African American,Yes,Hypertension,187,68,96,6047,42,18.3,0
+1236,73,Male,22.3,Sedentary,African American,No,Diabetes,247,51,66,5427,118,17.6,0
+1237,61,Male,34.9,Moderate Exercise,Hispanic,Yes,Hypertension,320,59,63,5004,95,18.2,1
+1238,73,Male,34.6,Smoker,Caucasian,Yes,Obesity,168,99,52,4930,95,18.8,1
+1239,41,Female,29.2,Moderate Exercise,African American,Yes,Diabetes,341,61,65,7841,45,6.6,0
+1240,73,Female,21.8,Sedentary,Caucasian,Yes,Hypertension,283,119,68,7770,102,6.9,0
+1241,26,Female,29.7,Smoker,Hispanic,No,Obesity,323,71,90,5163,57,13.4,1
+1242,26,Female,19.7,Moderate Exercise,African American,Yes,Obesity,265,81,88,8161,106,18.4,0
+1243,52,Female,19.0,Moderate Exercise,Hispanic,No,Diabetes,379,50,82,6867,64,19.6,0
+1244,78,Male,22.8,Smoker,Hispanic,Yes,Obesity,262,103,67,5426,70,5.7,1
+1245,47,Female,26.1,Active,Caucasian,No,None,319,107,67,6793,106,10.3,0
+1246,61,Male,32.8,Smoker,African American,No,Hypertension,369,119,47,5513,60,8.2,0
+1247,56,Male,30.5,Active,Hispanic,No,Hypertension,214,67,62,6803,114,16.3,0
+1248,57,Female,30.8,Sedentary,African American,No,Obesity,248,55,68,5327,61,14.6,0
+1249,25,Female,25.5,Sedentary,Caucasian,No,Obesity,381,94,44,3617,83,6.8,0
+1250,43,Male,24.2,Smoker,Hispanic,No,None,221,72,81,5165,101,12.3,1
+1251,26,Male,24.6,Smoker,Caucasian,Yes,Diabetes,336,72,46,6308,88,15.3,0
+1252,77,Male,34.8,Sedentary,African American,No,Obesity,201,75,81,3992,70,16.7,0
+1253,68,Female,19.2,Active,African American,Yes,Obesity,267,56,75,8424,95,5.3,0
+1254,50,Female,32.8,Sedentary,Caucasian,No,Obesity,324,93,80,4377,83,18.4,0
+1255,56,Female,28.0,Smoker,Asian,Yes,Obesity,269,76,66,7381,69,13.5,1
+1256,30,Female,25.7,Sedentary,Hispanic,No,Hypertension,156,75,97,6174,57,17.2,0
+1257,56,Female,30.5,Smoker,African American,No,Obesity,160,85,85,7782,66,17.1,0
+1258,79,Male,26.5,Smoker,African American,Yes,Hypertension,252,104,41,4305,94,7.8,1
+1259,28,Female,32.9,Sedentary,Hispanic,No,Obesity,210,113,64,8560,103,6.7,0
+1260,79,Male,33.4,Active,Caucasian,No,Diabetes,217,106,48,7833,84,15.8,0
+1261,35,Male,25.5,Moderate Exercise,Caucasian,No,None,302,118,92,6078,33,7.3,0
+1262,41,Male,23.1,Sedentary,Caucasian,Yes,Diabetes,289,110,66,5686,39,17.7,0
+1263,62,Female,28.3,Moderate Exercise,Asian,No,Obesity,303,51,40,5983,76,15.9,0
+1264,48,Female,33.6,Sedentary,Asian,Yes,Obesity,251,104,62,8990,104,17.6,0
+1265,29,Female,22.0,Moderate Exercise,African American,No,Obesity,259,87,49,5523,43,9.5,0
+1266,76,Male,28.8,Active,Caucasian,No,Diabetes,289,78,81,6582,67,9.7,0
+1267,58,Male,28.9,Active,Hispanic,Yes,Obesity,320,75,91,4485,41,15.1,0
+1268,30,Male,30.6,Sedentary,African American,No,Diabetes,200,84,64,5100,74,5.5,0
+1269,46,Male,20.7,Smoker,Hispanic,No,Hypertension,266,116,93,7581,46,15.9,0
+1270,35,Male,30.3,Moderate Exercise,African American,Yes,None,314,78,42,6715,109,17.5,0
+1271,72,Male,33.5,Smoker,Asian,No,None,195,83,45,8609,64,11.2,0
+1272,40,Female,21.5,Smoker,African American,Yes,Diabetes,202,90,97,5001,95,16.5,1
+1273,57,Female,22.4,Smoker,Asian,Yes,Hypertension,237,90,45,4387,104,7.6,0
+1274,33,Female,34.5,Active,African American,Yes,Diabetes,357,72,92,6183,70,9.8,0
+1275,30,Female,21.5,Sedentary,Caucasian,No,Hypertension,270,52,41,4030,96,19.6,0
+1276,40,Male,32.6,Sedentary,Hispanic,Yes,Obesity,162,107,97,4765,58,19.8,0
+1277,53,Male,26.6,Active,Caucasian,Yes,Hypertension,238,81,97,7763,47,12.7,0
+1278,27,Female,22.6,Active,African American,No,Hypertension,274,80,57,4220,49,19.0,0
+1279,44,Male,32.9,Sedentary,African American,Yes,Hypertension,267,92,62,7930,43,12.8,0
+1280,60,Female,25.8,Smoker,African American,No,None,203,56,41,7971,63,9.4,0
+1281,43,Female,27.0,Moderate Exercise,Asian,No,Hypertension,334,50,51,6806,78,9.0,0
+1282,50,Female,24.4,Moderate Exercise,Hispanic,No,Obesity,265,110,61,5414,83,18.9,0
+1283,27,Male,28.3,Moderate Exercise,Hispanic,No,Obesity,267,63,76,8097,60,7.6,0
+1284,43,Female,21.2,Smoker,African American,Yes,Obesity,153,101,59,7345,87,13.7,0
+1285,44,Female,25.0,Sedentary,African American,Yes,Hypertension,224,55,78,4618,71,13.3,0
+1286,56,Female,34.5,Active,Asian,Yes,Diabetes,373,59,63,4263,87,16.1,1
+1287,31,Male,22.8,Sedentary,Caucasian,Yes,Diabetes,198,79,87,3871,111,12.5,0
+1288,76,Male,29.3,Smoker,Caucasian,Yes,Obesity,156,70,59,3834,59,9.1,1
+1289,65,Female,23.9,Active,Hispanic,No,None,259,109,40,5822,54,7.5,0
+1290,57,Male,31.3,Smoker,Asian,Yes,Diabetes,271,112,40,3918,92,14.3,1
+1291,64,Male,20.7,Moderate Exercise,African American,Yes,Hypertension,160,91,56,4724,48,15.8,0
+1292,63,Male,34.5,Moderate Exercise,Hispanic,Yes,Diabetes,241,100,98,5413,101,13.5,1
+1293,42,Male,26.0,Smoker,Asian,No,Obesity,331,113,40,4313,37,16.1,0
+1294,64,Male,22.4,Active,Caucasian,No,None,382,105,92,8993,32,7.1,0
+1295,25,Male,19.7,Active,Asian,Yes,Diabetes,364,90,91,7498,96,18.2,0
+1296,35,Male,21.3,Sedentary,Caucasian,No,Diabetes,322,81,84,5105,115,13.7,0
+1297,52,Male,27.1,Moderate Exercise,Asian,Yes,Obesity,172,64,69,5568,110,6.9,0
+1298,49,Male,24.1,Sedentary,Hispanic,Yes,None,391,111,80,8423,46,11.9,0
+1299,74,Male,32.2,Sedentary,Caucasian,No,None,177,76,86,4138,43,17.7,0
+1300,47,Female,25.6,Smoker,Hispanic,No,Obesity,384,77,42,3209,38,18.5,0
+1301,55,Female,22.6,Smoker,Hispanic,Yes,Hypertension,260,113,85,4064,91,9.0,0
+1302,54,Male,28.7,Sedentary,Caucasian,Yes,Diabetes,206,108,94,7911,50,15.7,0
+1303,66,Female,30.2,Moderate Exercise,Caucasian,No,Hypertension,175,107,50,5220,105,6.5,0
+1304,59,Female,21.3,Smoker,African American,Yes,Diabetes,302,51,63,3233,66,5.5,0
+1305,31,Male,21.3,Sedentary,African American,No,Diabetes,203,85,61,3792,40,13.4,0
+1306,40,Male,19.1,Sedentary,African American,Yes,Hypertension,178,62,83,8709,49,15.4,0
+1307,50,Male,30.7,Sedentary,Hispanic,No,Obesity,360,64,84,6110,64,16.9,0
+1308,72,Female,29.5,Sedentary,Hispanic,Yes,Obesity,246,109,65,5166,82,10.1,0
+1309,76,Female,26.3,Sedentary,African American,Yes,Diabetes,313,71,52,3334,76,5.1,0
+1310,73,Male,32.4,Sedentary,Hispanic,No,Obesity,163,112,40,4359,104,12.2,0
+1311,26,Male,31.8,Smoker,Hispanic,Yes,Diabetes,227,74,63,8735,81,5.2,1
+1312,25,Male,28.2,Moderate Exercise,Caucasian,Yes,Obesity,184,97,49,8193,37,6.4,0
+1313,72,Female,32.8,Sedentary,Caucasian,No,Diabetes,179,92,74,4214,33,9.9,0
+1314,36,Female,21.9,Active,Hispanic,Yes,Obesity,241,87,63,7419,56,11.6,0
+1315,29,Female,20.3,Smoker,African American,Yes,None,166,90,67,8886,73,9.2,1
+1316,61,Female,23.0,Smoker,Asian,Yes,Hypertension,344,94,75,3283,69,13.7,0
+1317,56,Male,19.4,Sedentary,African American,No,None,357,89,55,3212,76,5.8,0
+1318,79,Male,27.3,Smoker,Asian,No,Hypertension,387,66,79,4658,73,7.2,0
+1319,33,Male,34.0,Sedentary,African American,No,Hypertension,307,106,55,7078,77,15.4,0
+1320,65,Male,19.1,Moderate Exercise,Caucasian,Yes,Diabetes,393,51,98,8837,114,7.1,0
+1321,59,Female,20.5,Moderate Exercise,Hispanic,Yes,Hypertension,242,111,56,8024,81,14.6,0
+1322,43,Female,26.0,Smoker,Hispanic,Yes,None,322,58,90,7847,113,5.8,1
+1323,72,Male,33.9,Smoker,Caucasian,Yes,None,228,117,93,4417,97,11.1,1
+1324,40,Male,23.7,Active,Asian,No,Obesity,259,66,54,5386,40,7.7,0
+1325,27,Female,26.9,Smoker,Asian,Yes,None,397,99,55,8917,106,6.6,0
+1326,44,Male,19.2,Active,Asian,Yes,Obesity,366,89,54,8141,102,13.5,0
+1327,48,Female,20.9,Moderate Exercise,Caucasian,Yes,Hypertension,328,107,96,4794,33,18.9,0
+1328,78,Male,34.8,Moderate Exercise,Asian,No,None,251,70,73,8988,105,5.8,0
+1329,57,Male,34.4,Sedentary,Caucasian,Yes,Hypertension,255,67,50,3104,102,11.3,1
+1330,48,Male,18.6,Moderate Exercise,African American,Yes,None,196,104,40,8585,106,15.6,0
+1331,76,Male,34.2,Active,African American,Yes,None,330,78,54,8578,77,11.9,1
+1332,35,Male,29.0,Smoker,Caucasian,Yes,Obesity,213,73,65,8551,55,17.1,0
+1333,73,Male,32.8,Sedentary,Hispanic,Yes,Hypertension,395,66,90,7865,106,7.7,1
+1334,32,Male,26.0,Active,African American,No,None,393,67,43,6893,68,19.4,0
+1335,60,Female,27.0,Smoker,Asian,Yes,Diabetes,399,91,82,6845,87,10.8,0
+1336,62,Female,26.6,Sedentary,Caucasian,Yes,Hypertension,315,94,44,6690,48,10.1,0
+1337,64,Female,29.5,Moderate Exercise,Asian,Yes,Hypertension,213,66,74,6292,117,18.1,0
+1338,44,Female,20.8,Active,Asian,Yes,Hypertension,236,63,52,3378,112,13.5,0
+1339,59,Female,19.0,Smoker,Hispanic,Yes,Obesity,366,98,49,6293,106,12.7,0
+1340,72,Male,23.6,Sedentary,Asian,Yes,Diabetes,383,78,50,6329,106,15.9,0
+1341,49,Male,30.1,Sedentary,Hispanic,Yes,Hypertension,156,53,57,7808,87,13.7,0
+1342,59,Female,21.8,Moderate Exercise,African American,Yes,None,171,69,73,6438,57,7.4,0
+1343,49,Male,29.6,Smoker,Caucasian,Yes,None,230,96,78,8468,95,15.1,0
+1344,53,Female,34.5,Moderate Exercise,Asian,Yes,Obesity,359,58,80,3224,39,7.0,1
+1345,42,Female,20.0,Moderate Exercise,Caucasian,No,None,390,76,81,8833,115,17.1,0
+1346,70,Male,29.6,Smoker,Asian,No,Hypertension,318,64,89,3737,106,19.8,0
+1347,42,Male,25.8,Smoker,Caucasian,No,None,223,68,62,3235,87,10.7,0
+1348,26,Male,32.8,Smoker,Asian,No,Hypertension,287,101,46,7278,102,11.7,0
+1349,78,Female,21.4,Active,Asian,Yes,None,334,75,98,3711,43,5.7,0
+1350,59,Male,29.9,Smoker,Asian,No,Diabetes,284,75,78,8988,113,5.2,1
+1351,40,Female,32.3,Sedentary,Asian,No,Obesity,389,75,42,4888,44,18.8,0
+1352,65,Female,34.1,Moderate Exercise,Asian,Yes,Obesity,274,95,51,7718,62,6.9,1
+1353,60,Female,29.8,Active,Asian,No,Diabetes,199,98,46,4259,46,11.7,0
+1354,57,Male,26.7,Smoker,Asian,No,Diabetes,379,102,88,8246,53,17.2,0
+1355,28,Male,28.7,Active,Asian,Yes,Obesity,368,52,65,3748,59,18.3,0
+1356,57,Female,32.8,Smoker,Asian,Yes,Diabetes,201,115,72,6986,91,12.8,1
+1357,38,Male,27.9,Active,Caucasian,Yes,Hypertension,310,91,76,6551,42,13.5,0
+1358,45,Male,19.0,Moderate Exercise,Hispanic,No,None,150,68,87,3509,91,15.0,0
+1359,72,Male,33.9,Moderate Exercise,Asian,No,Obesity,385,66,54,8671,76,19.4,0
+1360,44,Female,29.9,Sedentary,Hispanic,Yes,Diabetes,330,82,41,4823,45,14.0,0
+1361,32,Female,29.7,Sedentary,Asian,Yes,Hypertension,337,98,80,7880,95,13.4,0
+1362,31,Male,22.1,Smoker,Asian,No,Obesity,311,105,46,5941,110,5.2,1
+1363,27,Female,29.4,Moderate Exercise,Caucasian,Yes,Diabetes,153,112,71,7232,72,6.2,0
+1364,41,Male,25.0,Active,African American,No,Obesity,294,52,43,5134,37,13.7,0
+1365,57,Male,29.2,Active,African American,Yes,Diabetes,281,98,59,4777,32,19.0,0
+1366,72,Male,20.3,Active,Caucasian,Yes,Obesity,320,104,89,4222,41,18.0,0
+1367,36,Male,29.4,Sedentary,Hispanic,No,Hypertension,395,75,92,8429,113,19.7,0
+1368,75,Female,35.0,Active,African American,Yes,Hypertension,367,101,75,6667,45,12.9,1
+1369,46,Female,19.3,Sedentary,Caucasian,Yes,None,153,56,71,4777,107,16.8,0
+1370,79,Female,34.6,Sedentary,Caucasian,Yes,Obesity,150,95,67,4304,109,17.6,1
+1371,46,Male,25.2,Smoker,African American,No,None,220,95,52,7859,88,14.7,0
+1372,70,Male,32.9,Active,Hispanic,Yes,Obesity,371,65,40,3701,78,10.1,1
+1373,54,Male,31.4,Active,Caucasian,Yes,Diabetes,327,73,99,5989,92,12.0,1
+1374,62,Female,27.9,Moderate Exercise,Asian,Yes,Diabetes,350,110,95,3151,91,17.9,0
+1375,62,Male,30.7,Smoker,Hispanic,Yes,None,338,103,74,4325,78,9.5,1
+1376,69,Female,33.0,Moderate Exercise,Hispanic,Yes,Obesity,184,111,87,4301,80,18.9,1
+1377,75,Female,25.2,Smoker,African American,Yes,None,157,50,69,6722,62,8.4,1
+1378,78,Female,23.9,Active,African American,No,Hypertension,301,98,93,4711,59,16.2,0
+1379,32,Female,29.5,Sedentary,Asian,No,None,360,74,75,8127,88,14.5,0
+1380,51,Female,31.8,Sedentary,Caucasian,Yes,None,185,59,96,3806,105,16.2,1
+1381,51,Female,31.1,Sedentary,African American,No,Diabetes,327,65,94,7330,44,11.6,0
+1382,58,Male,31.7,Sedentary,African American,No,None,393,107,64,5722,111,19.0,0
+1383,45,Male,25.7,Sedentary,Hispanic,Yes,Obesity,272,78,55,7656,52,14.5,0
+1384,54,Female,32.0,Moderate Exercise,African American,No,Diabetes,192,55,97,4325,107,9.3,0
+1385,57,Female,20.5,Smoker,African American,No,None,176,65,58,7133,74,14.6,1
+1386,52,Male,27.5,Active,African American,No,Hypertension,181,69,40,4159,91,9.3,0
+1387,71,Female,18.6,Moderate Exercise,African American,No,None,227,92,44,5869,108,9.4,0
+1388,57,Female,23.9,Smoker,Hispanic,No,None,270,75,90,7516,100,11.0,1
+1389,29,Male,24.5,Sedentary,Asian,No,None,295,82,61,4242,44,17.8,0
+1390,72,Female,25.0,Smoker,Asian,No,Diabetes,305,75,63,3347,75,12.5,1
+1391,43,Female,30.0,Smoker,Caucasian,No,Obesity,306,94,82,4831,93,15.2,0
+1392,28,Female,24.9,Sedentary,African American,Yes,Hypertension,165,112,84,4569,75,10.9,0
+1393,59,Male,25.9,Sedentary,Hispanic,Yes,None,248,116,91,6935,85,9.0,0
+1394,73,Male,22.4,Sedentary,Caucasian,No,Obesity,196,101,76,4918,73,19.3,0
+1395,41,Male,24.7,Active,Caucasian,No,Obesity,336,117,92,6232,104,14.1,0
+1396,68,Female,22.2,Sedentary,Asian,Yes,Diabetes,180,75,75,6758,58,19.0,0
+1397,52,Female,19.7,Active,Hispanic,No,Hypertension,153,51,75,8997,91,8.1,0
+1398,54,Male,28.5,Sedentary,Hispanic,No,Diabetes,314,63,43,5355,118,7.2,0
+1399,53,Female,29.5,Active,Hispanic,Yes,Obesity,166,79,75,4397,81,17.8,0
+1400,70,Female,28.7,Smoker,Asian,Yes,Obesity,188,98,91,5780,83,15.2,0
+1401,77,Female,26.1,Moderate Exercise,Asian,Yes,Obesity,197,61,92,4824,117,7.8,0
+1402,30,Female,24.8,Smoker,Asian,No,Diabetes,323,93,57,5491,86,9.0,0
+1403,59,Female,32.7,Smoker,Asian,No,Hypertension,367,82,89,7060,112,17.0,0
+1404,65,Male,27.1,Sedentary,Asian,Yes,None,325,62,55,8324,95,11.8,0
+1405,61,Female,26.4,Active,African American,Yes,Diabetes,188,75,80,3404,51,15.1,0
+1406,48,Male,18.9,Moderate Exercise,African American,No,Obesity,382,70,57,4721,49,9.8,0
+1407,53,Female,24.1,Sedentary,Hispanic,Yes,Diabetes,281,77,61,8316,62,10.7,0
+1408,73,Male,24.8,Sedentary,Caucasian,No,Obesity,179,97,41,5825,101,19.9,0
+1409,70,Female,25.1,Sedentary,Hispanic,No,None,307,89,60,6845,54,8.7,0
+1410,77,Male,28.1,Smoker,Caucasian,Yes,None,171,115,75,7210,75,12.6,0
+1411,55,Female,27.3,Active,Asian,Yes,Hypertension,352,72,83,6192,102,17.7,0
+1412,59,Male,28.5,Active,Caucasian,No,Obesity,215,97,78,8772,86,8.6,0
+1413,57,Female,31.1,Moderate Exercise,Hispanic,Yes,Hypertension,257,51,86,3064,116,11.2,1
+1414,76,Male,31.9,Active,Hispanic,Yes,Hypertension,161,69,78,4299,34,14.2,1
+1415,45,Female,30.3,Active,Caucasian,Yes,None,371,108,68,7920,84,12.2,0
+1416,56,Male,34.3,Sedentary,African American,Yes,Diabetes,185,95,93,4415,90,11.9,1
+1417,47,Male,18.8,Sedentary,Asian,No,Diabetes,167,52,65,6593,118,10.4,0
+1418,57,Female,21.7,Smoker,Asian,No,Hypertension,239,104,60,3968,37,13.8,1
+1419,27,Female,18.6,Sedentary,Hispanic,No,None,330,61,56,3368,45,14.4,0
+1420,42,Male,29.2,Sedentary,African American,No,Obesity,348,89,55,3232,77,14.8,0
+1421,49,Female,33.3,Sedentary,Caucasian,Yes,Diabetes,150,115,99,5242,90,6.1,0
+1422,66,Male,22.5,Sedentary,Asian,Yes,Hypertension,276,65,70,8002,44,14.5,0
+1423,55,Male,33.8,Smoker,African American,No,Diabetes,335,83,90,6083,94,19.3,0
+1424,78,Male,19.5,Sedentary,Asian,No,Diabetes,239,93,48,3920,51,13.1,0
+1425,27,Female,33.9,Moderate Exercise,African American,Yes,Obesity,236,55,70,3688,32,15.7,0
+1426,64,Male,24.3,Moderate Exercise,African American,No,None,239,113,53,7272,83,13.4,0
+1427,70,Male,20.2,Moderate Exercise,Hispanic,No,Obesity,386,71,88,8130,43,17.8,0
+1428,48,Female,26.5,Moderate Exercise,Asian,Yes,None,283,67,76,4469,65,18.9,0
+1429,74,Female,22.7,Sedentary,Caucasian,No,Diabetes,219,61,41,7725,111,7.8,0
+1430,56,Female,23.2,Moderate Exercise,Hispanic,Yes,Hypertension,193,101,91,7259,111,11.6,0
+1431,71,Female,23.6,Sedentary,Hispanic,Yes,Obesity,349,100,87,6622,96,10.9,0
+1432,46,Male,31.7,Smoker,Caucasian,No,None,301,97,85,5100,39,11.1,0
+1433,47,Male,27.4,Moderate Exercise,Hispanic,Yes,Diabetes,235,68,53,5265,78,6.9,0
+1434,26,Male,23.6,Active,African American,No,None,168,55,98,6789,94,17.2,0
+1435,51,Male,28.6,Moderate Exercise,African American,Yes,None,250,76,72,3823,86,5.5,0
+1436,66,Female,30.3,Moderate Exercise,Asian,No,None,295,102,74,6431,56,12.9,0
+1437,26,Male,23.0,Sedentary,Asian,No,Diabetes,244,97,97,7151,104,14.9,0
+1438,50,Male,25.3,Moderate Exercise,Caucasian,No,Hypertension,250,56,78,7213,34,8.1,0
+1439,41,Female,20.5,Active,Asian,Yes,Hypertension,179,108,97,3797,100,18.6,0
+1440,64,Male,21.5,Sedentary,African American,Yes,Hypertension,398,118,86,3779,112,17.6,0
+1441,57,Male,29.7,Sedentary,Caucasian,No,None,319,60,90,5850,86,12.1,0
+1442,33,Male,21.5,Smoker,Caucasian,Yes,Diabetes,182,64,59,5892,44,11.2,1
+1443,67,Male,27.2,Smoker,Asian,No,None,351,113,41,8534,105,8.5,0
+1444,78,Male,30.2,Moderate Exercise,African American,No,Hypertension,378,52,90,4893,59,15.9,0
+1445,72,Male,20.3,Smoker,Caucasian,Yes,Hypertension,161,118,80,6306,49,7.0,0
+1446,63,Female,27.9,Smoker,African American,No,Diabetes,267,72,58,5902,66,15.2,1
+1447,53,Female,22.7,Smoker,African American,Yes,None,243,102,98,7803,32,17.6,0
+1448,66,Male,34.4,Sedentary,African American,No,Obesity,304,86,76,8199,102,8.4,0
+1449,79,Male,26.5,Sedentary,Asian,Yes,Obesity,316,58,57,6718,70,18.0,0
+1450,50,Female,31.8,Sedentary,Hispanic,No,Hypertension,286,64,55,3021,68,5.5,0
+1451,59,Male,27.6,Smoker,Hispanic,No,Diabetes,395,52,43,4500,55,18.7,0
+1452,74,Male,19.2,Sedentary,Caucasian,Yes,None,298,119,51,3842,31,6.8,0
+1453,49,Male,28.9,Smoker,African American,No,None,225,66,68,4760,52,14.7,1
+1454,48,Female,34.2,Sedentary,Asian,No,Hypertension,396,75,46,6641,52,8.8,0
+1455,37,Male,28.4,Sedentary,African American,Yes,Hypertension,178,70,53,8212,114,17.5,0
+1456,31,Female,32.0,Active,African American,No,None,310,70,94,3191,45,12.7,0
+1457,60,Male,33.1,Moderate Exercise,Asian,Yes,None,384,60,51,8114,38,7.0,1
+1458,69,Female,22.3,Smoker,Hispanic,No,Hypertension,339,87,74,8222,42,13.6,1
+1459,44,Female,22.0,Active,African American,Yes,None,266,84,44,3395,57,11.1,0
+1460,25,Male,28.6,Sedentary,African American,No,Obesity,164,63,56,8114,56,14.9,0
+1461,32,Female,25.3,Smoker,Hispanic,No,Hypertension,151,63,97,7662,80,18.2,1
+1462,70,Male,32.4,Sedentary,Asian,No,None,329,59,81,7326,93,11.1,0
+1463,40,Female,33.4,Moderate Exercise,Caucasian,Yes,Hypertension,380,61,71,3873,81,9.3,0
+1464,38,Male,24.3,Active,Hispanic,Yes,Diabetes,266,87,49,5621,110,5.2,0
+1465,36,Male,22.4,Moderate Exercise,Caucasian,Yes,Hypertension,321,83,82,7335,67,13.6,0
+1466,75,Female,31.4,Active,Caucasian,Yes,Hypertension,331,90,56,3089,94,11.0,1
+1467,47,Male,23.0,Sedentary,Hispanic,No,Diabetes,167,59,44,5279,47,10.6,0
+1468,39,Male,32.1,Moderate Exercise,African American,No,Obesity,152,66,84,3456,92,7.7,0
+1469,52,Female,25.5,Moderate Exercise,Caucasian,Yes,None,284,66,81,5280,80,11.5,0
+1470,58,Male,29.5,Sedentary,Caucasian,Yes,Diabetes,320,116,48,7449,38,19.8,0
+1471,26,Male,20.1,Moderate Exercise,Asian,Yes,Hypertension,359,111,88,4004,42,9.5,0
+1472,56,Female,28.8,Smoker,African American,No,None,385,50,72,8452,69,14.0,0
+1473,47,Female,26.0,Active,Caucasian,Yes,Diabetes,315,61,75,7534,84,16.6,0
+1474,46,Male,28.2,Active,Asian,Yes,None,314,53,75,8494,108,16.2,0
+1475,75,Male,21.3,Active,African American,No,None,335,91,57,3344,72,9.9,0
+1476,49,Female,30.7,Smoker,Hispanic,No,Diabetes,310,62,48,5711,73,14.2,1
+1477,46,Female,32.7,Active,Hispanic,Yes,None,257,53,96,7752,97,18.1,0
+1478,46,Male,22.1,Sedentary,Asian,No,Obesity,336,118,68,5462,62,5.2,0
+1479,73,Female,20.1,Moderate Exercise,Hispanic,Yes,Diabetes,244,68,89,4116,53,11.5,0
+1480,76,Male,18.9,Smoker,Caucasian,No,Obesity,271,51,53,3625,65,8.4,0
+1481,66,Male,29.1,Active,African American,Yes,Hypertension,160,61,64,7379,39,10.8,0
+1482,30,Male,28.5,Sedentary,Caucasian,Yes,None,217,55,54,4979,49,11.2,0
+1483,39,Male,27.5,Moderate Exercise,Caucasian,Yes,Hypertension,272,57,45,6994,104,16.2,0
+1484,78,Male,22.3,Moderate Exercise,Hispanic,Yes,Hypertension,359,100,95,4678,41,6.4,0
+1485,67,Female,24.9,Smoker,Caucasian,No,None,345,60,81,3222,91,12.7,0
+1486,61,Female,28.3,Smoker,Hispanic,No,Diabetes,262,112,68,3743,47,13.5,0
+1487,57,Female,26.7,Smoker,African American,No,None,247,106,54,3462,92,12.4,0
+1488,32,Female,34.8,Sedentary,African American,No,Hypertension,242,61,68,4568,113,16.0,0
+1489,77,Male,20.8,Sedentary,Caucasian,Yes,Hypertension,365,51,43,6347,54,10.8,0
+1490,68,Male,30.0,Smoker,Asian,Yes,Diabetes,171,57,57,8801,41,19.2,0
+1491,68,Male,25.2,Active,Hispanic,No,None,343,60,89,8259,50,12.2,0
+1492,29,Male,25.6,Moderate Exercise,Hispanic,No,Hypertension,321,102,96,4736,54,13.6,0
+1493,63,Female,30.3,Moderate Exercise,Caucasian,No,Obesity,276,59,88,8142,40,17.4,0
+1494,28,Male,29.9,Sedentary,Hispanic,No,Hypertension,283,57,83,7039,93,9.1,0
+1495,30,Male,34.9,Moderate Exercise,Hispanic,No,Hypertension,319,85,78,6951,102,6.1,0
+1496,69,Female,20.6,Active,Asian,Yes,Diabetes,174,63,55,3664,79,15.6,0
+1497,56,Female,20.2,Moderate Exercise,Asian,Yes,Obesity,396,103,50,4356,91,12.2,0
+1498,76,Female,30.5,Sedentary,Caucasian,Yes,Hypertension,334,70,53,4014,118,18.4,1
+1499,54,Female,28.0,Sedentary,Asian,No,Hypertension,234,99,42,5132,78,19.7,0
+1500,71,Male,23.0,Active,Caucasian,No,Obesity,204,88,90,5668,43,11.0,0
+1501,59,Male,19.8,Active,African American,No,None,293,69,89,4054,30,11.2,0
+1502,79,Female,19.9,Moderate Exercise,Caucasian,No,None,244,56,81,4764,110,11.1,0
+1503,64,Male,33.3,Moderate Exercise,African American,Yes,Hypertension,291,58,77,7458,54,9.9,1
+1504,76,Male,21.7,Sedentary,Caucasian,Yes,Hypertension,316,50,84,5869,88,16.7,0
+1505,40,Male,23.8,Active,Hispanic,No,None,305,75,81,4412,101,16.4,0
+1506,37,Female,22.2,Active,Asian,Yes,Diabetes,373,87,57,3667,98,12.2,0
+1507,74,Male,24.4,Active,African American,Yes,Obesity,369,87,97,6370,34,5.7,0
+1508,66,Female,19.6,Moderate Exercise,Caucasian,No,Obesity,328,110,59,8976,48,9.6,0
+1509,54,Male,27.1,Active,Asian,No,Diabetes,268,93,97,4394,52,9.4,0
+1510,43,Male,19.6,Sedentary,Caucasian,No,Diabetes,326,93,87,3098,38,17.2,0
+1511,41,Male,31.7,Sedentary,Asian,No,Diabetes,158,111,64,7070,79,6.3,0
+1512,43,Female,22.4,Moderate Exercise,Asian,No,Diabetes,335,55,96,3421,45,17.1,0
+1513,52,Male,27.4,Smoker,Caucasian,No,Diabetes,322,66,77,8599,62,15.0,0
+1514,79,Female,33.0,Moderate Exercise,African American,Yes,Diabetes,299,100,52,6650,31,16.0,1
+1515,50,Female,29.2,Smoker,African American,Yes,Obesity,309,87,43,7157,43,11.5,0
+1516,61,Female,27.3,Active,Hispanic,No,Diabetes,346,73,94,4132,30,15.2,0
+1517,50,Male,23.9,Moderate Exercise,Asian,Yes,None,364,100,53,4702,119,14.1,0
+1518,77,Male,24.0,Sedentary,Hispanic,No,Diabetes,346,59,72,6620,87,16.5,0
+1519,47,Male,29.5,Active,Hispanic,No,Diabetes,191,70,67,6190,118,11.7,0
+1520,33,Male,34.9,Sedentary,Caucasian,No,Obesity,202,119,91,3597,45,12.1,0
+1521,36,Female,29.4,Active,Caucasian,No,Obesity,373,106,76,3391,108,14.7,0
+1522,77,Female,27.7,Moderate Exercise,Caucasian,Yes,Diabetes,336,88,47,4075,119,6.6,0
+1523,25,Female,30.6,Smoker,Asian,No,Obesity,223,82,83,5650,76,11.5,0
+1524,25,Male,26.2,Active,Caucasian,Yes,Hypertension,188,108,73,8408,73,19.6,0
+1525,71,Female,19.5,Smoker,Caucasian,No,Obesity,271,67,83,5384,109,5.6,1
+1526,58,Male,27.8,Active,Asian,No,Obesity,164,105,44,3809,43,9.7,0
+1527,56,Female,34.3,Sedentary,Asian,No,Obesity,348,106,93,6309,53,9.7,0
+1528,78,Male,21.4,Sedentary,African American,Yes,Obesity,306,97,44,8501,84,14.5,0
+1529,72,Male,29.9,Active,Caucasian,No,None,272,91,70,6738,44,6.6,0
+1530,49,Female,21.8,Smoker,Caucasian,No,None,260,76,84,4159,112,14.4,0
+1531,64,Female,27.3,Moderate Exercise,Caucasian,No,None,280,101,48,4531,101,6.4,0
+1532,69,Female,20.1,Moderate Exercise,African American,Yes,Diabetes,232,91,81,8481,63,6.4,0
+1533,77,Female,25.9,Sedentary,Caucasian,Yes,Diabetes,159,81,71,7976,31,15.9,0
+1534,25,Male,31.0,Moderate Exercise,African American,Yes,Hypertension,241,75,72,8695,56,9.9,0
+1535,40,Female,24.2,Sedentary,Hispanic,No,None,178,74,42,5682,103,19.7,0
+1536,63,Female,29.5,Moderate Exercise,African American,Yes,Diabetes,356,72,69,3253,116,5.6,0
+1537,29,Female,31.6,Active,Hispanic,No,Obesity,184,106,89,6548,101,11.7,0
+1538,46,Male,33.8,Sedentary,Caucasian,Yes,Obesity,155,101,51,6185,52,6.7,0
+1539,53,Male,22.4,Sedentary,Hispanic,Yes,None,289,80,68,8264,97,10.3,0
+1540,79,Female,25.1,Active,African American,No,Hypertension,260,113,42,4231,43,20.0,0
+1541,27,Male,21.0,Sedentary,Asian,Yes,Hypertension,187,82,65,5423,92,18.3,0
+1542,36,Female,34.9,Moderate Exercise,Hispanic,No,Obesity,226,51,96,6575,94,5.7,0
+1543,50,Male,33.8,Moderate Exercise,Hispanic,No,Hypertension,242,67,69,7261,97,13.4,0
+1544,40,Male,27.4,Sedentary,Caucasian,Yes,None,296,96,48,4573,92,14.7,0
+1545,75,Male,32.4,Moderate Exercise,African American,No,Obesity,216,82,65,5908,119,8.1,0
+1546,61,Male,27.1,Smoker,Hispanic,No,Diabetes,285,84,41,7712,110,7.2,0
+1547,46,Female,28.8,Sedentary,Hispanic,Yes,Diabetes,157,100,42,4625,116,18.6,0
+1548,53,Female,20.0,Active,Hispanic,Yes,Hypertension,396,67,85,6998,93,19.5,0
+1549,38,Female,31.0,Smoker,Hispanic,No,Obesity,271,79,43,6883,61,19.9,0
+1550,52,Male,20.6,Sedentary,Asian,Yes,Obesity,233,93,64,6515,108,16.8,0
+1551,29,Female,32.1,Active,African American,No,Diabetes,324,102,90,6403,42,15.0,0
+1552,71,Female,31.4,Moderate Exercise,Caucasian,No,Obesity,281,59,52,7598,95,10.2,0
+1553,73,Female,30.2,Active,Caucasian,Yes,Obesity,328,101,78,8008,48,7.6,1
+1554,54,Male,19.1,Smoker,Asian,Yes,Obesity,234,98,83,7680,53,6.2,0
+1555,70,Male,23.5,Moderate Exercise,African American,Yes,Hypertension,344,60,74,4958,117,15.4,0
+1556,76,Male,22.8,Sedentary,Hispanic,Yes,Obesity,194,115,94,7009,40,16.8,0
+1557,29,Female,24.4,Moderate Exercise,Asian,No,None,285,107,62,5735,88,17.4,0
+1558,36,Female,19.9,Sedentary,African American,No,Hypertension,236,85,48,7491,115,18.7,0
+1559,40,Female,34.0,Sedentary,Hispanic,Yes,Obesity,165,82,41,8727,44,18.2,0
+1560,50,Male,27.6,Active,Asian,Yes,Obesity,226,96,93,8976,39,20.0,0
+1561,50,Male,23.5,Active,African American,No,None,344,62,80,6174,70,8.7,0
+1562,72,Female,25.1,Active,Caucasian,No,Hypertension,389,89,83,3401,56,16.4,0
+1563,45,Male,25.9,Smoker,Caucasian,No,Diabetes,158,117,70,3974,89,13.8,0
+1564,63,Male,28.4,Smoker,African American,No,Diabetes,209,91,83,3223,102,8.9,0
+1565,60,Male,27.0,Active,Caucasian,Yes,Hypertension,227,68,86,7613,81,19.7,0
+1566,57,Male,33.7,Smoker,African American,No,Obesity,226,68,41,3235,57,18.5,0
+1567,54,Female,26.7,Moderate Exercise,Hispanic,No,Obesity,394,107,71,6498,94,6.9,0
+1568,61,Male,34.9,Moderate Exercise,African American,Yes,Diabetes,398,72,57,7211,46,5.4,1
+1569,47,Male,32.5,Smoker,Hispanic,No,Diabetes,220,103,52,6234,73,15.3,1
+1570,34,Male,21.9,Smoker,Asian,No,Diabetes,164,114,85,3225,39,14.1,0
+1571,78,Male,33.9,Moderate Exercise,African American,Yes,None,220,61,44,5277,92,19.0,1
+1572,29,Female,20.4,Sedentary,Asian,Yes,Diabetes,251,73,97,7277,111,8.5,0
+1573,60,Female,32.0,Moderate Exercise,Caucasian,Yes,None,375,83,81,4341,76,6.3,1
+1574,58,Male,24.8,Moderate Exercise,Hispanic,No,Hypertension,318,102,83,7036,67,8.9,0
+1575,76,Male,33.0,Smoker,African American,No,Obesity,171,57,49,3209,99,5.3,0
+1576,55,Male,32.8,Moderate Exercise,Asian,Yes,Diabetes,301,67,95,6727,105,5.5,1
+1577,34,Male,31.8,Smoker,Hispanic,Yes,Obesity,262,106,82,8511,82,18.7,0
+1578,43,Male,31.5,Smoker,Hispanic,No,Obesity,378,54,64,6928,107,10.3,0
+1579,56,Male,23.5,Active,Caucasian,Yes,Diabetes,321,75,73,7989,73,11.2,0
+1580,25,Female,19.8,Moderate Exercise,Caucasian,Yes,Diabetes,150,79,76,8977,103,5.3,0
+1581,29,Male,25.1,Sedentary,Hispanic,Yes,Hypertension,159,103,69,5803,83,9.1,0
+1582,69,Female,21.4,Active,Hispanic,No,None,384,62,46,4109,49,17.1,0
+1583,28,Female,30.0,Smoker,African American,No,None,357,78,45,5026,108,14.2,0
+1584,40,Male,24.2,Smoker,Hispanic,No,Obesity,259,52,93,3393,60,16.3,0
+1585,48,Female,34.6,Sedentary,African American,No,Diabetes,349,107,94,3843,36,11.7,0
+1586,40,Female,29.1,Smoker,Hispanic,No,Hypertension,333,51,42,4524,87,9.6,0
+1587,79,Female,32.1,Moderate Exercise,Caucasian,No,Hypertension,262,77,52,3603,39,12.2,0
+1588,26,Female,20.7,Active,African American,Yes,Hypertension,366,51,42,3581,39,9.8,0
+1589,73,Female,32.7,Smoker,Asian,No,Hypertension,199,56,65,4939,68,17.6,1
+1590,52,Female,33.7,Smoker,Caucasian,No,Hypertension,161,75,96,3132,57,9.5,1
+1591,56,Male,26.5,Sedentary,African American,Yes,None,238,65,63,5838,59,14.9,0
+1592,51,Female,28.5,Moderate Exercise,African American,No,None,358,72,92,6385,66,7.1,0
+1593,44,Female,31.1,Smoker,Asian,No,None,337,89,45,6770,96,15.3,0
+1594,48,Female,21.4,Sedentary,African American,Yes,Diabetes,303,109,82,5268,72,18.7,0
+1595,36,Male,26.8,Smoker,Hispanic,Yes,Obesity,387,81,99,3975,108,14.1,1
+1596,74,Female,25.1,Sedentary,Asian,Yes,Hypertension,261,64,97,4813,114,13.4,0
+1597,59,Male,20.9,Sedentary,Caucasian,No,Diabetes,227,62,88,6263,81,19.4,0
+1598,57,Female,24.6,Moderate Exercise,Caucasian,Yes,Hypertension,318,54,81,4543,85,14.4,0
+1599,57,Male,19.6,Smoker,Hispanic,No,None,313,101,51,5835,105,8.9,0
+1600,75,Male,18.9,Moderate Exercise,Caucasian,No,Diabetes,270,90,88,5738,97,9.4,0
+1601,67,Female,20.7,Sedentary,African American,No,None,172,102,75,4357,38,15.6,0
+1602,61,Female,34.4,Active,African American,No,Hypertension,320,99,41,7134,52,16.0,0
+1603,36,Male,27.6,Smoker,Hispanic,Yes,Hypertension,283,64,50,4316,92,9.6,1
+1604,27,Female,34.4,Active,Caucasian,Yes,Obesity,388,56,78,3161,90,10.2,0
+1605,25,Male,25.6,Smoker,Caucasian,No,Hypertension,346,89,73,4909,69,19.9,0
+1606,57,Male,23.6,Moderate Exercise,Hispanic,Yes,None,320,77,65,4127,73,6.5,0
+1607,64,Male,26.9,Moderate Exercise,Asian,No,Hypertension,174,81,57,6870,115,11.1,0
+1608,34,Male,25.8,Moderate Exercise,Caucasian,No,Obesity,167,64,60,4658,53,5.9,0
+1609,67,Male,20.2,Moderate Exercise,Asian,No,Obesity,339,119,75,6125,80,17.3,0
+1610,68,Female,29.1,Moderate Exercise,Caucasian,Yes,None,290,114,79,4963,87,6.4,0
+1611,53,Male,22.1,Active,Caucasian,No,Diabetes,192,53,91,8153,119,15.1,0
+1612,37,Male,28.7,Moderate Exercise,Caucasian,No,Hypertension,227,60,85,5289,62,5.8,0
+1613,36,Female,29.2,Sedentary,Caucasian,Yes,Obesity,177,75,83,3966,45,15.1,0
+1614,55,Male,21.0,Sedentary,African American,Yes,Hypertension,295,110,61,3889,51,17.6,0
+1615,70,Female,19.5,Active,Asian,Yes,Hypertension,208,86,92,6061,86,11.0,0
+1616,26,Female,31.4,Smoker,Asian,Yes,Diabetes,337,72,98,6629,91,12.8,0
+1617,75,Female,26.1,Sedentary,Caucasian,No,Obesity,212,89,69,6189,111,11.0,0
+1618,74,Male,19.5,Smoker,Caucasian,Yes,Hypertension,334,72,89,5748,100,9.5,1
+1619,59,Male,34.9,Active,Asian,No,Obesity,241,65,82,4666,119,17.0,0
+1620,47,Male,19.5,Smoker,African American,Yes,None,328,110,99,6066,101,9.1,1
+1621,41,Female,30.0,Smoker,Hispanic,Yes,None,205,117,69,4441,99,15.8,1
+1622,50,Male,34.7,Smoker,Hispanic,Yes,Hypertension,304,80,47,4067,59,8.1,0
+1623,32,Female,22.4,Smoker,Asian,Yes,Obesity,309,102,73,7223,52,8.7,1
+1624,53,Male,20.8,Active,Caucasian,Yes,Hypertension,260,74,96,5923,61,10.0,0
+1625,50,Female,20.5,Sedentary,Caucasian,Yes,Obesity,286,93,86,7253,115,13.8,0
+1626,34,Male,23.5,Moderate Exercise,African American,No,Obesity,381,61,48,6856,86,11.8,0
+1627,50,Male,20.2,Smoker,Hispanic,Yes,Diabetes,373,58,90,3826,38,16.2,1
+1628,58,Male,29.9,Sedentary,African American,Yes,Diabetes,361,61,59,8986,60,8.2,0
+1629,75,Female,19.5,Sedentary,Hispanic,Yes,Diabetes,369,118,79,7607,100,5.2,0
+1630,65,Female,26.9,Active,Asian,Yes,Hypertension,374,103,64,6985,38,16.6,0
+1631,31,Male,34.9,Sedentary,Hispanic,No,Diabetes,217,103,58,5092,42,17.3,0
+1632,28,Male,31.9,Active,African American,Yes,Diabetes,195,77,44,6179,87,5.9,0
+1633,77,Female,28.7,Smoker,African American,Yes,None,398,105,50,7538,32,14.2,0
+1634,74,Female,23.6,Smoker,African American,Yes,Obesity,375,118,54,6901,64,10.7,0
+1635,69,Female,28.8,Moderate Exercise,Asian,Yes,Obesity,389,107,47,5362,50,16.9,0
+1636,35,Male,27.2,Moderate Exercise,Hispanic,No,Diabetes,216,91,58,5224,93,18.1,0
+1637,53,Female,25.5,Moderate Exercise,Hispanic,Yes,Obesity,303,87,62,4726,81,17.8,0
+1638,60,Male,20.7,Sedentary,African American,No,None,285,117,66,5006,63,16.7,0
+1639,49,Female,33.1,Smoker,Hispanic,Yes,None,155,102,79,8791,64,9.0,0
+1640,45,Male,25.9,Active,Caucasian,No,Diabetes,357,82,71,3266,44,17.2,0
+1641,60,Female,21.7,Moderate Exercise,Caucasian,No,None,173,105,65,3837,35,13.0,0
+1642,34,Female,24.6,Active,Caucasian,Yes,Obesity,325,100,66,7584,114,5.8,0
+1643,61,Female,25.3,Active,Hispanic,Yes,Hypertension,380,92,58,7797,61,11.9,0
+1644,33,Female,32.2,Moderate Exercise,Asian,No,Obesity,243,64,89,3686,81,19.1,0
+1645,48,Female,30.6,Smoker,Asian,No,Hypertension,322,87,81,6361,112,18.3,1
+1646,59,Male,31.2,Moderate Exercise,Asian,Yes,Diabetes,162,64,68,8091,57,6.5,1
+1647,73,Female,18.7,Active,Asian,No,Hypertension,346,54,78,3356,114,16.2,0
+1648,59,Female,25.4,Moderate Exercise,Caucasian,No,None,174,103,99,6815,93,17.1,0
+1649,72,Female,26.4,Active,Caucasian,No,Obesity,297,100,80,3871,108,9.1,0
+1650,60,Male,18.8,Active,African American,Yes,Hypertension,267,59,72,4973,107,12.1,0
+1651,42,Female,22.8,Moderate Exercise,Hispanic,No,Obesity,231,61,58,7647,48,15.7,0
+1652,73,Male,31.0,Sedentary,Hispanic,No,Diabetes,260,53,76,4810,44,11.6,0
+1653,63,Female,20.8,Moderate Exercise,Asian,No,Diabetes,231,67,58,7418,35,6.7,0
+1654,56,Female,27.3,Sedentary,Caucasian,Yes,None,215,85,72,5641,102,15.6,0
+1655,48,Male,22.1,Active,Asian,Yes,Diabetes,351,74,86,5228,113,18.7,0
+1656,47,Female,18.7,Active,African American,No,Hypertension,396,85,55,6391,67,14.8,0
+1657,56,Male,22.5,Sedentary,Hispanic,Yes,Diabetes,194,116,62,7178,55,16.6,0
+1658,61,Male,34.6,Active,Hispanic,No,None,263,58,46,5350,111,10.4,0
+1659,36,Female,31.7,Sedentary,Asian,Yes,Obesity,324,110,65,7357,80,7.7,0
+1660,73,Male,34.3,Sedentary,African American,Yes,Obesity,212,102,71,7879,102,14.6,1
+1661,79,Female,26.5,Active,Hispanic,No,Diabetes,225,67,51,8319,82,9.9,0
+1662,37,Female,20.3,Smoker,African American,Yes,Hypertension,388,92,47,8009,85,17.9,0
+1663,47,Male,27.5,Sedentary,African American,Yes,None,354,84,44,5739,88,6.8,0
+1664,49,Male,26.0,Moderate Exercise,Asian,Yes,Hypertension,263,112,81,8039,99,11.5,0
+1665,59,Male,32.4,Moderate Exercise,Caucasian,No,None,260,53,67,5730,107,11.0,0
+1666,65,Male,20.1,Active,Asian,Yes,Diabetes,398,90,92,4318,87,19.1,0
+1667,54,Female,26.6,Smoker,Caucasian,Yes,None,332,94,44,4535,117,7.3,0
+1668,41,Female,21.0,Active,African American,No,None,352,99,88,7784,42,5.1,0
+1669,73,Male,23.9,Smoker,Caucasian,Yes,Diabetes,296,77,65,5443,72,8.6,0
+1670,44,Female,30.7,Sedentary,African American,Yes,Hypertension,184,91,44,4772,105,17.3,0
+1671,72,Female,26.4,Sedentary,Hispanic,Yes,Diabetes,380,118,61,6209,80,8.1,0
+1672,49,Female,24.7,Sedentary,Hispanic,Yes,None,202,50,54,7934,48,8.6,0
+1673,46,Female,25.0,Sedentary,Hispanic,Yes,Diabetes,175,88,52,3877,50,6.9,0
+1674,37,Male,26.1,Moderate Exercise,Asian,No,None,387,66,67,5870,112,15.7,0
+1675,43,Male,31.5,Moderate Exercise,Asian,No,Diabetes,163,84,72,6200,53,6.0,0
+1676,73,Female,33.2,Active,African American,Yes,Obesity,267,95,82,7144,55,10.0,1
+1677,60,Male,34.3,Smoker,Hispanic,Yes,Obesity,194,91,62,6747,74,9.2,1
+1678,36,Male,31.5,Sedentary,Asian,Yes,Diabetes,321,88,72,5836,57,13.3,0
+1679,65,Male,23.7,Sedentary,Hispanic,No,Hypertension,365,98,82,3292,111,16.0,0
+1680,43,Female,29.9,Smoker,Asian,No,None,382,111,57,4651,58,13.0,0
+1681,36,Female,25.7,Smoker,Caucasian,Yes,Obesity,342,87,89,7631,46,19.0,0
+1682,33,Female,22.7,Active,Caucasian,Yes,Hypertension,200,72,92,7406,97,19.3,0
+1683,31,Male,32.4,Smoker,Hispanic,No,None,320,71,69,3536,73,10.4,0
+1684,52,Female,19.1,Sedentary,African American,Yes,Obesity,268,53,65,5686,90,16.7,0
+1685,38,Female,33.4,Sedentary,Asian,No,Obesity,363,98,55,3233,97,16.1,0
+1686,55,Male,26.1,Sedentary,Asian,No,Diabetes,300,108,52,8328,103,18.4,0
+1687,76,Female,29.0,Sedentary,Caucasian,Yes,None,333,117,78,5652,54,11.7,0
+1688,43,Female,29.4,Sedentary,Caucasian,No,Hypertension,395,51,72,5374,96,13.0,0
+1689,71,Male,33.3,Active,African American,Yes,Hypertension,168,98,65,5272,31,11.2,1
+1690,40,Male,29.0,Sedentary,African American,Yes,Hypertension,231,80,87,3966,118,17.8,0
+1691,77,Male,28.6,Active,African American,Yes,None,225,89,40,3889,78,8.4,0
+1692,29,Female,19.6,Sedentary,Hispanic,Yes,Hypertension,332,97,88,6863,99,8.6,0
+1693,59,Female,27.1,Moderate Exercise,Caucasian,Yes,Hypertension,369,100,77,6400,55,10.6,0
+1694,36,Female,21.0,Moderate Exercise,Hispanic,Yes,Hypertension,241,92,41,3034,101,8.5,0
+1695,49,Male,30.7,Moderate Exercise,Caucasian,No,Diabetes,337,104,88,7542,56,13.4,0
+1696,76,Male,27.0,Moderate Exercise,Caucasian,No,Diabetes,336,98,45,6523,118,7.0,0
+1697,45,Female,29.7,Active,Asian,No,None,182,106,85,4763,47,9.8,0
+1698,60,Female,19.2,Active,Caucasian,No,None,296,64,89,6291,83,18.7,0
+1699,77,Male,19.9,Smoker,Caucasian,Yes,Hypertension,177,76,77,5488,30,11.1,1
+1700,47,Male,30.3,Sedentary,Hispanic,No,Diabetes,272,117,81,5700,90,16.2,0
+1701,40,Male,19.7,Moderate Exercise,Caucasian,No,Obesity,329,113,63,4558,32,6.7,0
+1702,63,Male,19.7,Active,Hispanic,No,Obesity,275,79,57,7690,97,8.7,0
+1703,69,Female,18.7,Sedentary,African American,Yes,Hypertension,326,85,66,5276,70,17.1,0
+1704,77,Male,34.3,Sedentary,Caucasian,No,Hypertension,186,116,80,7006,66,16.4,0
+1705,66,Female,30.7,Active,Caucasian,Yes,Diabetes,303,98,47,7439,80,10.8,1
+1706,63,Female,24.3,Moderate Exercise,Hispanic,No,Diabetes,248,104,67,4103,44,19.3,0
+1707,38,Female,23.4,Smoker,African American,Yes,Diabetes,247,105,49,4419,37,18.7,0
+1708,55,Male,24.3,Sedentary,Asian,Yes,None,276,117,56,8409,67,19.4,0
+1709,29,Male,31.3,Smoker,African American,No,None,376,93,94,4478,112,11.4,1
+1710,59,Male,29.4,Moderate Exercise,Hispanic,Yes,Hypertension,317,80,68,6914,85,8.0,0
+1711,47,Male,21.6,Moderate Exercise,African American,Yes,None,229,107,97,6742,76,14.4,0
+1712,53,Female,21.4,Smoker,Hispanic,No,Diabetes,187,102,45,8247,119,15.3,0
+1713,67,Male,20.1,Moderate Exercise,Hispanic,No,Diabetes,226,72,53,5956,39,6.9,0
+1714,35,Male,29.4,Sedentary,Asian,No,None,275,77,61,4382,107,16.8,0
+1715,42,Female,31.1,Smoker,Caucasian,Yes,Obesity,236,65,93,5574,78,5.3,0
+1716,71,Male,22.9,Moderate Exercise,Hispanic,Yes,Hypertension,203,86,45,6384,70,12.2,0
+1717,36,Female,18.8,Smoker,Hispanic,Yes,Obesity,299,70,65,4569,112,10.0,0
+1718,33,Female,19.9,Sedentary,Asian,No,Hypertension,165,66,78,4894,59,16.1,0
+1719,34,Female,34.5,Moderate Exercise,Hispanic,Yes,Obesity,177,86,51,5243,34,9.7,0
+1720,68,Female,23.4,Sedentary,Caucasian,Yes,None,389,68,74,4866,100,17.4,0
+1721,41,Female,31.2,Moderate Exercise,Asian,Yes,Hypertension,312,79,53,3028,112,13.9,0
+1722,62,Female,28.8,Active,Caucasian,Yes,Hypertension,337,94,61,3705,60,16.9,0
+1723,31,Female,24.8,Moderate Exercise,Caucasian,Yes,Hypertension,322,67,90,4020,81,19.8,0
+1724,70,Female,21.9,Smoker,Asian,Yes,Diabetes,195,111,62,5063,117,15.2,0
+1725,37,Male,20.5,Moderate Exercise,Hispanic,Yes,Diabetes,221,85,87,4446,52,19.8,0
+1726,64,Male,28.6,Sedentary,Caucasian,No,Obesity,385,101,46,6664,77,5.4,0
+1727,66,Male,31.3,Sedentary,Caucasian,No,None,332,68,79,5987,69,10.1,0
+1728,33,Male,29.1,Moderate Exercise,Caucasian,No,Diabetes,396,93,89,8755,35,6.6,0
+1729,74,Female,27.2,Smoker,Caucasian,Yes,Hypertension,363,56,64,6602,67,8.9,0
+1730,51,Male,19.2,Active,Asian,Yes,Diabetes,234,93,52,8062,70,17.6,0
+1731,26,Female,34.5,Smoker,Asian,No,None,175,117,60,6685,56,5.5,1
+1732,29,Male,31.7,Active,African American,Yes,Diabetes,381,83,80,6368,104,12.8,0
+1733,53,Male,23.3,Sedentary,African American,No,Hypertension,234,115,49,6581,98,13.5,0
+1734,61,Male,34.7,Smoker,Caucasian,Yes,Obesity,302,118,92,5762,86,13.4,1
+1735,62,Female,28.4,Active,Hispanic,Yes,Hypertension,382,104,94,7037,46,12.1,0
+1736,43,Male,28.1,Moderate Exercise,Caucasian,No,None,214,59,98,3572,100,16.9,0
+1737,32,Female,30.8,Sedentary,Hispanic,No,Obesity,283,91,48,8702,76,7.0,0
+1738,72,Female,31.9,Moderate Exercise,Caucasian,No,Diabetes,300,90,54,7088,108,9.7,0
+1739,69,Male,29.3,Sedentary,African American,No,Diabetes,264,118,91,3614,42,14.2,0
+1740,25,Male,20.6,Smoker,African American,No,Diabetes,213,59,41,7050,40,15.4,0
+1741,46,Male,24.1,Smoker,Hispanic,Yes,Obesity,236,59,64,3325,119,11.1,0
+1742,76,Female,33.8,Sedentary,Caucasian,Yes,Hypertension,320,109,52,6740,115,18.1,1
+1743,41,Male,22.2,Sedentary,Hispanic,Yes,Obesity,256,100,73,3358,53,11.2,0
+1744,31,Female,24.6,Sedentary,African American,No,Obesity,300,70,90,6777,102,11.0,0
+1745,49,Female,25.6,Smoker,Caucasian,No,None,245,57,97,8906,33,5.5,0
+1746,69,Male,25.8,Active,Caucasian,No,Obesity,307,114,73,5371,75,13.3,0
+1747,28,Male,28.6,Moderate Exercise,Hispanic,No,Diabetes,226,79,74,4721,47,15.6,0
+1748,60,Female,34.1,Moderate Exercise,Asian,No,Hypertension,384,98,77,4349,72,6.7,0
+1749,30,Female,22.5,Smoker,Hispanic,No,Hypertension,295,58,42,6696,109,9.6,0
+1750,55,Female,20.5,Moderate Exercise,African American,Yes,Hypertension,236,66,81,6896,62,16.7,0
+1751,43,Male,21.8,Sedentary,African American,Yes,Diabetes,356,118,95,7260,39,10.5,0
+1752,68,Female,33.1,Active,African American,Yes,Diabetes,374,107,98,4596,102,8.6,1
+1753,78,Male,29.2,Moderate Exercise,African American,Yes,Diabetes,298,106,45,4627,88,15.1,0
+1754,63,Female,23.2,Active,African American,Yes,Diabetes,206,111,94,5502,60,8.0,0
+1755,51,Female,32.0,Sedentary,Asian,No,Diabetes,252,101,87,8272,57,18.4,0
+1756,34,Male,32.7,Moderate Exercise,Caucasian,No,Obesity,300,110,88,6808,89,6.6,0
+1757,50,Female,32.5,Smoker,Hispanic,No,Diabetes,240,89,58,8246,32,15.6,1
+1758,43,Male,33.7,Active,Hispanic,No,Diabetes,194,87,42,3192,84,12.5,0
+1759,63,Male,22.7,Sedentary,African American,No,Diabetes,321,92,57,5674,43,18.0,0
+1760,27,Female,31.0,Active,Hispanic,No,Diabetes,359,112,78,6845,87,6.9,0
+1761,69,Male,26.1,Moderate Exercise,African American,Yes,Hypertension,237,68,48,5577,118,15.2,0
+1762,37,Male,32.4,Moderate Exercise,Asian,No,Diabetes,264,99,91,3091,44,13.6,0
+1763,74,Female,30.5,Smoker,Asian,No,Obesity,196,82,51,7234,31,12.2,0
+1764,52,Male,31.3,Sedentary,Caucasian,No,Obesity,317,62,44,3480,53,12.4,0
+1765,44,Male,29.3,Sedentary,Asian,No,Obesity,328,111,42,8452,107,15.8,0
+1766,52,Male,21.4,Smoker,Asian,Yes,None,319,92,50,5916,93,19.1,0
+1767,32,Female,27.5,Smoker,Caucasian,Yes,Hypertension,284,98,96,7435,100,6.4,0
+1768,65,Male,34.7,Sedentary,Hispanic,No,Diabetes,199,85,69,4075,53,5.3,0
+1769,63,Female,34.0,Active,African American,Yes,None,325,59,43,5513,56,17.1,1
+1770,25,Female,19.2,Active,African American,Yes,Diabetes,233,55,44,3798,66,6.6,0
+1771,27,Male,21.2,Smoker,Hispanic,No,None,240,106,40,7570,68,19.8,0
+1772,37,Male,20.7,Active,Caucasian,No,None,283,50,66,8558,92,14.3,0
+1773,52,Male,30.5,Sedentary,Hispanic,No,Obesity,240,107,67,6949,108,14.8,0
+1774,73,Female,32.0,Moderate Exercise,Asian,No,Obesity,286,70,68,3604,55,8.0,0
+1775,49,Male,22.0,Moderate Exercise,Caucasian,No,None,394,105,57,5979,94,8.6,0
+1776,57,Male,26.8,Active,Caucasian,Yes,Obesity,258,69,51,7916,33,14.9,0
+1777,62,Male,32.4,Smoker,Caucasian,No,None,206,103,52,3597,58,18.6,0
+1778,77,Male,30.6,Smoker,African American,No,Hypertension,180,74,80,4532,30,19.7,0
+1779,30,Male,27.4,Smoker,Hispanic,No,Obesity,170,77,41,3513,79,8.0,0
+1780,68,Female,28.2,Smoker,Caucasian,Yes,Obesity,239,54,76,8622,115,7.0,0
+1781,69,Female,26.9,Smoker,Caucasian,No,Obesity,189,70,84,4877,40,5.8,0
+1782,56,Male,23.4,Active,Caucasian,No,Hypertension,261,67,55,6972,103,18.0,0
+1783,69,Male,27.8,Moderate Exercise,Hispanic,No,None,194,96,87,6843,88,9.4,0
+1784,71,Male,29.9,Moderate Exercise,African American,Yes,Diabetes,226,119,63,4699,91,5.0,0
+1785,45,Male,32.9,Active,Asian,No,Obesity,326,106,74,4029,110,8.4,0
+1786,40,Female,29.0,Smoker,African American,No,None,236,68,61,7595,65,10.1,1
+1787,78,Male,31.1,Active,Caucasian,No,Hypertension,297,114,75,8780,85,19.9,0
+1788,45,Female,21.1,Moderate Exercise,African American,Yes,Diabetes,250,52,50,3716,119,12.9,0
+1789,35,Female,26.1,Sedentary,African American,No,Obesity,395,91,94,8237,50,8.1,0
+1790,61,Male,18.7,Active,Asian,No,Hypertension,266,70,97,8604,42,10.0,0
+1791,60,Female,22.6,Smoker,Hispanic,No,Hypertension,241,89,85,7086,38,10.0,0
+1792,59,Female,30.5,Moderate Exercise,Hispanic,Yes,Diabetes,294,116,68,3665,40,5.3,1
+1793,43,Female,34.9,Moderate Exercise,African American,No,None,177,74,74,5208,104,7.0,0
+1794,44,Female,20.1,Moderate Exercise,African American,No,Obesity,318,104,87,4079,99,15.4,0
+1795,42,Male,25.1,Moderate Exercise,Hispanic,No,Obesity,343,101,93,3227,30,6.8,0
+1796,71,Male,31.7,Smoker,Hispanic,Yes,None,174,93,54,3148,99,8.5,1
+1797,65,Female,21.9,Sedentary,Asian,Yes,None,207,105,99,4069,106,10.3,0
+1798,73,Male,27.7,Moderate Exercise,Caucasian,No,None,391,104,70,8263,115,16.4,0
+1799,38,Male,30.6,Active,African American,Yes,Diabetes,190,119,81,7727,85,13.7,0
+1800,39,Male,28.7,Sedentary,Hispanic,Yes,Diabetes,283,115,80,4363,60,15.3,0
+1801,55,Male,21.6,Moderate Exercise,African American,Yes,Obesity,224,68,82,7508,115,13.5,0
+1802,25,Male,24.4,Sedentary,African American,No,Diabetes,398,56,55,4755,66,15.3,0
+1803,77,Female,31.4,Active,Hispanic,No,Hypertension,187,112,49,3519,76,5.0,0
+1804,78,Male,27.6,Moderate Exercise,Asian,Yes,Obesity,283,91,88,8463,107,19.0,0
+1805,78,Male,18.6,Active,African American,Yes,Diabetes,322,91,71,6544,76,6.7,0
+1806,27,Male,31.1,Smoker,Asian,Yes,None,224,108,90,5322,98,11.1,1
+1807,40,Male,19.1,Moderate Exercise,Hispanic,No,Hypertension,291,69,41,4102,87,16.6,0
+1808,47,Female,30.8,Moderate Exercise,Caucasian,No,None,215,66,63,3597,65,11.5,0
+1809,35,Female,21.8,Moderate Exercise,Caucasian,Yes,Obesity,317,76,62,8755,61,19.2,0
+1810,36,Female,34.3,Moderate Exercise,African American,Yes,None,152,96,41,6273,93,12.0,0
+1811,34,Female,24.6,Smoker,Hispanic,Yes,Diabetes,396,51,77,7049,100,18.1,1
+1812,56,Male,23.9,Moderate Exercise,Asian,Yes,Diabetes,266,112,70,8781,71,17.2,0
+1813,40,Female,21.0,Sedentary,African American,No,Obesity,248,111,90,5605,77,19.7,0
+1814,32,Male,23.5,Moderate Exercise,Hispanic,Yes,None,374,68,79,5188,103,18.9,0
+1815,62,Male,33.0,Smoker,Hispanic,No,Obesity,301,66,65,7825,110,18.5,0
+1816,36,Male,34.9,Moderate Exercise,Asian,Yes,None,168,118,68,3588,59,16.0,0
+1817,48,Male,24.6,Sedentary,African American,Yes,Hypertension,295,88,42,7472,50,10.5,0
+1818,52,Male,25.9,Smoker,Hispanic,Yes,Diabetes,341,88,97,4407,89,6.6,0
+1819,77,Female,30.4,Smoker,Hispanic,Yes,Obesity,390,85,53,8965,42,15.3,1
+1820,32,Female,33.1,Sedentary,Hispanic,Yes,Hypertension,265,89,64,7846,30,19.7,0
+1821,52,Female,28.3,Sedentary,Asian,No,Hypertension,274,94,87,7722,94,15.9,0
+1822,60,Female,25.0,Sedentary,African American,Yes,Obesity,237,53,40,6390,62,18.9,0
+1823,50,Male,25.3,Sedentary,African American,Yes,Obesity,386,74,92,6440,67,17.1,0
+1824,32,Female,30.0,Sedentary,African American,Yes,Hypertension,184,118,42,4629,54,7.4,0
+1825,74,Male,18.6,Smoker,African American,No,None,339,79,93,3994,55,8.7,0
+1826,52,Female,28.7,Smoker,Caucasian,No,Hypertension,150,117,65,8679,106,10.1,1
+1827,52,Male,24.4,Moderate Exercise,Caucasian,No,Obesity,377,78,57,7798,88,7.5,0
+1828,61,Male,31.6,Moderate Exercise,African American,No,Hypertension,302,117,48,5059,62,13.7,0
+1829,65,Female,20.0,Active,Asian,Yes,None,322,100,77,8275,70,19.6,0
+1830,60,Male,28.2,Moderate Exercise,Caucasian,Yes,Diabetes,326,73,62,7572,59,16.4,0
+1831,51,Male,26.4,Moderate Exercise,Hispanic,Yes,Diabetes,275,63,60,5986,86,11.4,0
+1832,78,Female,29.1,Sedentary,Caucasian,No,Hypertension,384,118,96,3400,78,5.1,0
+1833,41,Male,19.6,Sedentary,Hispanic,Yes,None,375,67,40,5855,77,9.7,0
+1834,33,Female,28.1,Moderate Exercise,African American,Yes,Diabetes,238,91,60,5224,101,12.9,0
+1835,57,Female,27.8,Active,Caucasian,No,Hypertension,293,106,66,6412,78,9.9,0
+1836,77,Female,27.8,Sedentary,Asian,No,Hypertension,375,61,81,3056,76,6.7,0
+1837,44,Male,28.5,Moderate Exercise,Caucasian,No,None,370,66,98,4875,85,11.6,0
+1838,37,Male,29.7,Moderate Exercise,Caucasian,Yes,Obesity,296,79,45,7543,94,8.8,0
+1839,52,Male,31.8,Smoker,Caucasian,Yes,Hypertension,300,72,94,7298,41,18.6,1
+1840,72,Female,23.0,Active,African American,No,Obesity,360,50,83,6768,98,6.5,0
+1841,53,Male,32.1,Smoker,Asian,Yes,Obesity,174,81,75,8752,117,5.7,1
+1842,37,Female,26.7,Active,Caucasian,No,Diabetes,165,58,67,7833,35,5.1,0
+1843,70,Female,19.8,Sedentary,Asian,No,Obesity,331,64,84,7297,118,9.9,0
+1844,59,Male,19.5,Active,African American,Yes,None,392,77,56,4353,94,14.9,0
+1845,30,Female,24.0,Moderate Exercise,Hispanic,No,Diabetes,222,73,98,5410,54,16.0,0
+1846,42,Male,31.5,Moderate Exercise,Caucasian,No,Diabetes,278,109,79,7987,30,11.8,0
+1847,75,Male,30.2,Active,Asian,No,Diabetes,191,84,97,7311,61,15.3,0
+1848,29,Male,31.5,Active,Asian,Yes,Hypertension,296,76,91,5602,32,10.4,0
+1849,71,Male,27.0,Active,African American,No,Hypertension,374,69,42,5934,78,15.0,0
+1850,49,Male,25.8,Smoker,Caucasian,No,Obesity,311,114,51,3022,48,5.6,0
+1851,26,Female,20.9,Active,Hispanic,No,Diabetes,229,98,78,5202,89,10.9,0
+1852,34,Female,23.9,Sedentary,Asian,No,Diabetes,385,50,51,4209,58,16.9,0
+1853,54,Female,25.7,Smoker,Caucasian,No,None,253,59,41,5296,79,17.0,0
+1854,74,Male,20.0,Smoker,Hispanic,No,Obesity,332,96,95,3748,31,15.7,0
+1855,69,Male,22.1,Active,Asian,No,None,295,108,85,3804,102,8.1,0
+1856,29,Male,28.4,Sedentary,Asian,Yes,Obesity,183,111,61,3133,85,8.7,0
+1857,79,Female,30.6,Smoker,Hispanic,Yes,Obesity,238,67,62,7416,46,19.9,1
+1858,57,Male,35.0,Moderate Exercise,Hispanic,No,Hypertension,274,95,69,5437,89,6.6,0
+1859,78,Female,33.9,Smoker,African American,Yes,Hypertension,194,81,44,3433,65,7.7,1
+1860,25,Female,29.1,Active,Caucasian,Yes,None,283,76,48,8141,90,7.0,0
+1861,42,Male,25.5,Sedentary,Caucasian,No,Obesity,170,67,60,7968,46,9.9,0
+1862,56,Male,29.0,Active,African American,Yes,Diabetes,271,88,50,6671,78,8.2,0
+1863,71,Female,31.5,Moderate Exercise,Asian,No,Hypertension,219,98,44,6736,105,12.5,0
+1864,73,Male,20.5,Moderate Exercise,Hispanic,No,Diabetes,245,93,74,7039,89,12.1,0
+1865,35,Female,25.3,Moderate Exercise,Hispanic,No,None,254,103,66,5098,49,18.5,0
+1866,45,Male,32.4,Active,Hispanic,No,Hypertension,197,83,88,5917,79,5.5,0
+1867,50,Male,24.8,Smoker,Asian,No,Hypertension,384,85,41,3252,32,9.8,1
+1868,49,Female,27.9,Active,Hispanic,Yes,Obesity,188,67,63,8061,72,13.9,0
+1869,46,Male,28.2,Sedentary,Hispanic,No,None,180,87,70,7834,86,14.1,0
+1870,51,Female,21.5,Smoker,African American,Yes,Obesity,383,108,72,4129,79,12.2,0
+1871,73,Male,24.5,Moderate Exercise,Asian,No,Hypertension,159,58,78,6264,97,17.2,0
+1872,37,Female,24.0,Active,Caucasian,No,None,179,100,69,8435,110,5.9,0
+1873,57,Female,18.9,Moderate Exercise,African American,No,Hypertension,398,84,85,3301,79,17.2,0
+1874,58,Male,18.9,Moderate Exercise,African American,Yes,None,393,54,76,4977,66,12.4,0
+1875,65,Female,32.2,Sedentary,Caucasian,No,Hypertension,167,63,90,5763,75,7.0,0
+1876,59,Male,23.0,Smoker,African American,No,Diabetes,337,79,67,7005,71,18.3,0
+1877,25,Male,27.0,Sedentary,Asian,No,Diabetes,237,53,99,6241,44,14.7,0
+1878,45,Male,23.4,Sedentary,Hispanic,No,Obesity,393,88,70,6057,62,7.5,0
+1879,72,Female,34.0,Sedentary,Asian,Yes,Diabetes,274,113,50,3550,109,5.5,1
+1880,79,Female,22.8,Moderate Exercise,Caucasian,No,Hypertension,222,74,62,8574,40,7.1,0
+1881,30,Male,25.6,Sedentary,Caucasian,Yes,Hypertension,372,77,96,8411,49,14.1,0
+1882,52,Male,32.9,Sedentary,African American,No,Diabetes,164,115,41,4587,53,7.7,0
+1883,41,Female,32.4,Smoker,Asian,Yes,Obesity,153,71,79,4822,93,8.4,0
+1884,29,Male,21.6,Smoker,Asian,Yes,Diabetes,340,80,80,8920,109,5.4,0
+1885,55,Male,31.7,Sedentary,Caucasian,No,None,317,72,66,8260,94,15.8,0
+1886,29,Female,26.1,Smoker,Asian,No,None,158,97,74,6217,117,17.2,0
+1887,62,Male,26.5,Smoker,Caucasian,Yes,None,258,69,41,6496,117,17.0,1
+1888,27,Female,20.7,Sedentary,Asian,No,Diabetes,286,87,78,7409,102,6.9,0
+1889,77,Male,19.8,Moderate Exercise,Asian,No,Diabetes,303,104,76,7279,115,18.5,0
+1890,47,Female,30.5,Sedentary,Asian,No,Diabetes,281,117,60,8783,105,15.1,0
+1891,61,Male,26.7,Smoker,Caucasian,Yes,None,358,50,97,3712,46,18.5,1
+1892,77,Male,25.7,Moderate Exercise,African American,No,Obesity,165,56,44,5175,118,11.7,0
+1893,61,Female,30.5,Active,Asian,No,Hypertension,292,106,91,8406,90,11.6,0
+1894,34,Male,31.1,Moderate Exercise,Caucasian,No,Diabetes,248,61,84,7072,44,16.8,0
+1895,34,Female,21.1,Smoker,Caucasian,Yes,Obesity,270,54,60,6849,80,6.4,1
+1896,43,Male,28.6,Moderate Exercise,Asian,No,Hypertension,201,99,68,5433,56,12.8,0
+1897,41,Female,20.7,Sedentary,Asian,Yes,Hypertension,218,91,59,6301,115,17.5,0
+1898,45,Female,30.9,Active,African American,No,Hypertension,396,61,77,3270,103,17.5,0
+1899,38,Female,29.3,Active,Caucasian,Yes,Obesity,154,67,59,4794,90,19.3,0
+1900,33,Female,34.3,Active,Caucasian,No,Obesity,169,115,89,7906,87,15.5,0
+1901,70,Male,19.6,Smoker,Hispanic,No,None,228,66,64,5462,60,8.1,0
+1902,25,Male,19.4,Smoker,Caucasian,Yes,Obesity,295,117,41,7293,41,5.3,0
+1903,75,Female,23.2,Active,African American,Yes,Obesity,260,111,96,6394,75,12.2,0
+1904,69,Female,22.8,Moderate Exercise,Hispanic,Yes,Obesity,151,90,71,4079,60,12.7,0
+1905,37,Female,22.6,Active,Hispanic,No,Hypertension,242,83,65,5878,61,8.6,0
+1906,28,Male,33.5,Moderate Exercise,Hispanic,No,Diabetes,162,119,45,8322,61,6.9,0
+1907,25,Male,22.6,Moderate Exercise,Asian,No,None,153,94,80,8740,82,13.8,0
+1908,73,Male,23.0,Smoker,Asian,No,Diabetes,319,107,96,7723,90,16.5,0
+1909,64,Male,31.0,Moderate Exercise,Caucasian,Yes,Diabetes,258,100,42,3603,75,19.9,1
+1910,56,Female,25.9,Active,Hispanic,No,Obesity,223,83,72,8257,114,16.4,0
+1911,58,Female,31.3,Smoker,African American,No,None,338,93,40,8541,103,16.9,0
+1912,52,Female,19.6,Sedentary,Asian,No,Diabetes,244,64,90,8176,109,14.2,0
+1913,55,Male,26.5,Sedentary,African American,No,Diabetes,254,119,44,4585,36,19.8,0
+1914,32,Male,19.1,Smoker,African American,No,None,157,99,52,6057,33,14.6,0
+1915,63,Male,19.5,Active,Asian,No,Obesity,216,81,58,8006,81,17.9,0
+1916,50,Female,33.5,Sedentary,Asian,No,Diabetes,389,116,51,6985,118,19.2,0
+1917,58,Female,20.8,Sedentary,Asian,Yes,Hypertension,340,52,87,7689,60,18.9,0
+1918,78,Male,27.3,Moderate Exercise,Asian,No,Diabetes,259,100,64,4395,104,10.7,0
+1919,78,Female,25.3,Moderate Exercise,Hispanic,No,Hypertension,158,116,96,6688,113,6.2,0
+1920,27,Male,24.2,Active,Hispanic,No,Obesity,371,97,90,3599,65,7.6,0
+1921,74,Male,33.3,Smoker,Hispanic,No,Diabetes,266,66,74,3513,83,5.9,0
+1922,36,Female,18.9,Active,Hispanic,Yes,None,160,56,51,8991,83,6.6,0
+1923,25,Male,29.5,Smoker,Caucasian,Yes,None,248,62,69,4066,46,7.8,0
+1924,78,Female,34.4,Sedentary,Hispanic,Yes,Diabetes,378,115,44,5886,104,10.1,1
+1925,68,Male,27.7,Moderate Exercise,Asian,Yes,Obesity,191,53,73,5653,59,13.2,0
+1926,29,Female,34.0,Active,African American,Yes,Obesity,290,59,61,7905,51,15.7,0
+1927,54,Female,19.4,Active,Hispanic,Yes,None,313,66,78,4088,72,8.2,0
+1928,54,Female,25.4,Smoker,Caucasian,No,Diabetes,269,101,52,7385,56,15.1,0
+1929,41,Male,22.8,Smoker,Asian,Yes,Obesity,290,55,96,7864,66,15.6,0
+1930,72,Male,30.6,Active,African American,Yes,None,161,118,86,5514,75,13.4,1
+1931,71,Female,34.7,Smoker,African American,No,Hypertension,186,58,93,6969,64,18.6,1
+1932,47,Female,22.7,Active,Hispanic,Yes,Diabetes,223,70,42,6284,33,6.7,0
+1933,39,Male,29.3,Active,African American,No,Hypertension,397,73,99,7566,109,7.7,0
+1934,61,Male,21.8,Active,Hispanic,No,Hypertension,222,53,92,5196,109,11.4,0
+1935,45,Male,27.8,Sedentary,Hispanic,Yes,Obesity,201,73,59,7183,114,6.9,0
+1936,38,Female,26.2,Smoker,Asian,No,Obesity,348,108,70,3789,55,13.5,0
+1937,26,Male,34.5,Moderate Exercise,Asian,Yes,Obesity,279,52,44,6475,48,11.0,0
+1938,35,Male,28.5,Moderate Exercise,Caucasian,Yes,Diabetes,395,117,63,6153,110,9.3,0
+1939,75,Female,24.3,Smoker,Asian,No,Hypertension,205,89,79,4664,74,7.5,1
+1940,63,Male,20.4,Active,Asian,No,Diabetes,209,97,93,4309,55,10.0,0
+1941,62,Male,21.0,Moderate Exercise,Hispanic,Yes,Obesity,172,103,72,3864,51,14.1,0
+1942,58,Male,22.2,Moderate Exercise,Asian,No,Hypertension,252,84,47,6863,87,13.6,0
+1943,62,Female,22.6,Smoker,Hispanic,No,Diabetes,189,105,63,8389,92,7.5,1
+1944,74,Female,32.5,Moderate Exercise,Hispanic,Yes,Diabetes,213,89,89,6363,57,6.9,1
+1945,58,Female,27.8,Active,Asian,Yes,None,380,117,59,6524,94,5.4,0
+1946,42,Female,27.1,Smoker,Caucasian,No,Diabetes,234,95,99,6786,73,5.2,0
+1947,54,Female,20.4,Active,Caucasian,Yes,Obesity,300,62,55,3023,72,18.2,0
+1948,39,Female,32.7,Moderate Exercise,African American,Yes,Diabetes,306,76,89,6003,66,5.7,0
+1949,51,Female,30.4,Moderate Exercise,African American,Yes,Hypertension,355,55,91,8982,95,16.0,1
+1950,75,Male,19.6,Active,Asian,Yes,Diabetes,367,66,51,3310,46,18.1,0
+1951,58,Male,30.2,Sedentary,Caucasian,Yes,None,328,85,52,8580,69,6.5,1
+1952,76,Female,27.5,Moderate Exercise,Hispanic,Yes,Hypertension,346,51,84,4231,67,11.5,0
+1953,62,Male,19.8,Sedentary,African American,Yes,Hypertension,396,101,81,6788,114,19.4,0
+1954,57,Male,26.1,Moderate Exercise,Hispanic,No,None,372,115,78,5711,90,17.5,0
+1955,48,Female,26.5,Sedentary,African American,Yes,Obesity,238,101,64,7801,38,12.3,0
+1956,39,Male,21.2,Sedentary,Asian,No,Hypertension,180,92,85,8455,106,16.4,0
+1957,54,Male,34.1,Sedentary,Caucasian,No,Obesity,327,71,71,3421,104,17.5,0
+1958,79,Male,32.5,Active,African American,No,Hypertension,169,104,63,4773,90,10.2,0
+1959,66,Male,29.5,Sedentary,Caucasian,Yes,Hypertension,385,116,87,6568,109,18.4,0
+1960,75,Male,26.1,Sedentary,Hispanic,Yes,Obesity,332,109,86,3946,45,12.1,0
+1961,41,Female,25.3,Sedentary,Asian,No,Hypertension,358,107,83,4186,31,12.9,0
+1962,29,Female,29.2,Moderate Exercise,Caucasian,Yes,Obesity,386,61,48,4834,101,20.0,0
+1963,53,Female,27.5,Sedentary,Asian,No,None,279,118,79,4564,72,17.6,0
+1964,28,Male,19.5,Moderate Exercise,Caucasian,Yes,Obesity,302,88,89,7944,71,10.4,0
+1965,34,Female,27.0,Sedentary,Hispanic,Yes,None,162,62,62,8685,106,5.2,0
+1966,41,Male,31.8,Sedentary,Hispanic,No,Hypertension,271,90,89,8414,86,14.4,0
+1967,34,Male,26.1,Active,Asian,No,Obesity,252,106,52,4947,110,15.6,0
+1968,41,Male,19.4,Moderate Exercise,Hispanic,No,Hypertension,369,102,99,4308,117,14.8,0
+1969,44,Male,31.5,Sedentary,African American,Yes,Obesity,255,61,98,5986,96,19.5,0
+1970,48,Female,21.8,Moderate Exercise,Caucasian,No,None,268,62,71,3386,59,17.9,0
+1971,29,Female,22.8,Moderate Exercise,Hispanic,Yes,None,219,106,89,4161,42,11.7,0
+1972,58,Male,21.2,Smoker,African American,Yes,Obesity,344,89,54,6258,48,5.9,0
+1973,30,Female,23.9,Active,Asian,Yes,None,335,94,75,7811,36,12.1,0
+1974,77,Male,31.0,Active,African American,No,Hypertension,248,84,88,6933,38,15.3,0
+1975,26,Female,27.1,Active,Asian,No,Hypertension,231,52,44,5847,112,14.1,0
+1976,37,Female,21.9,Smoker,Asian,No,Diabetes,224,54,61,7521,83,13.1,0
+1977,67,Male,33.0,Smoker,Caucasian,Yes,None,267,60,55,4439,115,12.0,1
+1978,67,Female,33.0,Active,Caucasian,Yes,Hypertension,233,105,80,6442,111,9.4,1
+1979,72,Male,32.9,Smoker,African American,No,Obesity,341,59,49,7480,90,9.2,1
+1980,35,Female,22.4,Smoker,Caucasian,Yes,None,218,83,63,3055,116,12.5,0
+1981,75,Male,25.9,Smoker,Caucasian,Yes,Hypertension,360,116,57,6324,31,7.4,1
+1982,71,Male,34.8,Active,Caucasian,No,None,363,80,88,3105,79,10.1,0
+1983,47,Female,31.2,Active,African American,No,Obesity,208,115,57,6201,104,9.9,0
+1984,79,Female,18.9,Active,Hispanic,No,Hypertension,337,119,46,3669,60,13.8,0
+1985,40,Male,19.6,Smoker,Caucasian,Yes,Diabetes,360,90,43,7471,62,6.0,0
+1986,55,Female,26.2,Active,Caucasian,Yes,Diabetes,275,112,65,3742,107,17.4,0
+1987,35,Female,33.5,Smoker,African American,Yes,None,260,81,44,3966,109,13.4,1
+1988,78,Male,27.4,Sedentary,Hispanic,Yes,Obesity,211,69,99,3307,40,15.1,0
+1989,40,Male,26.7,Smoker,Caucasian,Yes,Hypertension,293,106,94,5138,62,15.5,1
+1990,32,Female,20.2,Moderate Exercise,Asian,No,Obesity,277,99,55,6464,36,9.4,0
+1991,28,Male,29.3,Active,African American,Yes,Hypertension,365,74,74,7897,60,12.1,0
+1992,64,Male,32.1,Active,Caucasian,Yes,None,254,61,65,3109,77,19.3,1
+1993,28,Male,24.8,Moderate Exercise,Caucasian,Yes,Hypertension,217,88,57,6632,76,16.5,0
+1994,49,Female,31.3,Smoker,Asian,No,Obesity,164,66,68,8760,107,19.5,0
+1995,27,Female,34.4,Sedentary,Asian,No,Obesity,366,94,62,7435,82,16.2,0
+1996,56,Male,21.9,Moderate Exercise,African American,No,None,385,60,92,8684,109,7.6,0
+1997,27,Female,27.1,Moderate Exercise,African American,Yes,Obesity,332,119,53,8074,48,6.0,0
+1998,51,Male,23.2,Smoker,Asian,No,Hypertension,184,72,54,4915,110,13.7,0
+1999,53,Female,31.6,Active,African American,No,None,332,119,88,7263,119,10.4,0
+2000,56,Male,28.0,Smoker,Asian,No,Hypertension,163,87,72,3556,35,9.1,0

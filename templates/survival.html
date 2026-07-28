@@ -1,0 +1,106 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="mb-6">
+  <h1 class="text-4xl font-bold gradient-primary bg-clip-text text-transparent mb-2">📊 Survival Analytics Dashboard</h1>
+  <p class="text-gray-600">Actual Notebook 3 results are loaded here. Use the visual summaries and subgroup findings to support clinical decisions.</p>
+  <p class="text-sm text-slate-500 mt-2">Cohort-level survival metrics, recurrence-free curves, and hazard ratio insights are derived from the published dataset. These results are intended to explain trends, not replace individualized clinical judgment.</p>
+</div>
+
+<div class="grid grid-cols-1 lg:grid-cols-4 gap-4 mb-6">
+  <div class="bg-white p-5 rounded-3xl shadow-sm border border-slate-200">
+    <div class="text-xs uppercase tracking-wide text-slate-400">Overall recurrence rate</div>
+    <div class="mt-3 text-3xl font-bold text-slate-900">{{ '%.1f' % (stats.recurrence_rate*100) if stats.recurrence_rate is not none else 'N/A' }}%</div>
+    <div class="mt-2 text-xs text-slate-500">Percent of patients with a recorded recurrence event in the cohort.</div>
+  </div>
+  <div class="bg-white p-5 rounded-3xl shadow-sm border border-slate-200">
+    <div class="text-xs uppercase tracking-wide text-slate-400">Median RFS</div>
+    <div class="mt-3 text-3xl font-bold text-slate-900">{{ stats.median_rfs_months or 'N/A' }} mo</div>
+    <div class="mt-2 text-xs text-slate-500">The median recurrence-free survival time across the cohort.</div>
+  </div>
+  <div class="bg-white p-5 rounded-3xl shadow-sm border border-slate-200">
+    <div class="text-xs uppercase tracking-wide text-slate-400">12-month RFS</div>
+    <div class="mt-3 text-3xl font-bold text-slate-900">{{ '%.1f' % (stats.rfs_12m*100) if stats.rfs_12m is not none else 'N/A' }}%</div>
+    <div class="mt-2 text-xs text-slate-500">Probability of being recurrence-free at one year.</div>
+  </div>
+  <div class="bg-white p-5 rounded-3xl shadow-sm border border-slate-200">
+    <div class="text-xs uppercase tracking-wide text-slate-400">24-month RFS</div>
+    <div class="mt-3 text-3xl font-bold text-slate-900">{{ '%.1f' % (stats.rfs_24m*100) if stats.rfs_24m is not none else 'N/A' }}%</div>
+    <div class="mt-2 text-xs text-slate-500">Probability of being recurrence-free at two years.</div>
+  </div>
+</div>
+
+<div class="bg-white p-6 rounded-3xl shadow-sm mb-6 border border-slate-200">
+  <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-4 mb-4">
+    <div>
+      <h2 class="text-xl font-semibold text-slate-900">Kaplan-Meier Survival Curves</h2>
+      <p class="text-sm text-slate-500">Select the clinical factor to review recurrence-free survival stratification.</p>
+    </div>
+    <div class="flex flex-col sm:flex-row items-start sm:items-center gap-3">
+      <div class="flex items-center gap-3">
+        <label class="text-sm text-slate-600">View by</label>
+        <select id="km-select" class="border rounded-lg p-2 text-sm text-slate-700" onchange="switchKM()">
+          {% for g in km_groups %}
+            <option value="{{ g }}" {% if loop.first %}selected{% endif %}>{{ g.replace('_', ' ').title() }}</option>
+          {% endfor %}
+        </select>
+      </div>
+      <div class="text-sm text-slate-500">
+        Showing survival curves for <span id="km-selected-group">{{ km_groups[0].replace('_', ' ').title() }}</span>.
+      </div>
+    </div>
+  </div>
+  <div class="rounded-3xl overflow-hidden bg-slate-50 border border-slate-200">
+    {% if km_group_images[km_groups[0]] %}
+      <img id="km-img" src="data:image/png;base64,{{ km_group_images[km_groups[0]] }}" alt="KM plot" class="w-full h-[28rem] object-contain bg-white" />
+    {% else %}
+      <div class="h-72 flex items-center justify-center text-slate-500">Kaplan-Meier plot unavailable for this cohort.</div>
+    {% endif %}
+  </div>
+  <div class="mt-3 text-sm text-slate-500">Kaplan-Meier curves compare recurrence-free survival over time by the selected subgroup. Different selections may look similar if outcomes are consistent across groups.</div>
+</div>
+
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-6">
+  <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-200 lg:col-span-2">
+    <h2 class="text-xl font-semibold text-slate-900 mb-4">Treatment Combination Outcomes</h2>
+    <div class="overflow-x-auto">{{ treatment_table|safe }}</div>
+  </div>
+  <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-200">
+    <h2 class="text-xl font-semibold text-slate-900 mb-4">Log-rank Test Results</h2>
+    <div class="overflow-x-auto">{{ logrank_table|safe }}</div>
+  </div>
+</div>
+
+<div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-200 mb-6">
+  <h2 class="text-xl font-semibold text-slate-900 mb-4">Hazard Ratio Forest Plot</h2>
+  <p class="text-sm text-slate-500 mb-4">This chart summarizes the relative recurrence risk associated with each covariate from the Cox proportional hazards model. Values above 1 indicate higher risk, while values below 1 indicate lower risk.</p>
+  {% if cox_image %}
+    <img src="data:image/png;base64,{{ cox_image }}" alt="Cox forest" class="w-full h-[24rem] object-contain rounded-3xl bg-slate-50 border border-slate-200" />
+  {% else %}
+    <div class="h-64 flex items-center justify-center text-slate-500">Cox forest plot unavailable with the current dataset.</div>
+  {% endif %}
+</div>
+
+<div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-200 mb-6">
+  <h2 class="text-xl font-semibold text-slate-900 mb-4">Subgroup Summary</h2>
+  <div class="overflow-x-auto">{{ subgroup_table|safe }}</div>
+</div>
+
+<script>
+const kmGroupImages = {{ km_group_images | tojson | safe }};
+const kmSelectedGroup = document.getElementById('km-selected-group');
+function switchKM(){
+  const select = document.getElementById('km-select');
+  const image = document.getElementById('km-img');
+  const value = select.value;
+  kmSelectedGroup.textContent = value.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+  if (kmGroupImages[value]) {
+    image.src = 'data:image/png;base64,' + kmGroupImages[value];
+    image.alt = 'KM plot by ' + kmSelectedGroup.textContent;
+  } else {
+    image.src = '';
+    image.alt = 'No KM image available';
+  }
+}
+</script>
+
+{% endblock %}

@@ -1,0 +1,242 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="mb-6">
+  <h1 class="text-4xl font-bold gradient-danger bg-clip-text text-transparent mb-2">🔍 CRC Risk Detection</h1>
+  <p class="text-gray-600">Fill the patient profile to estimate colorectal cancer risk.</p>
+</div>
+{% if message %}
+<div class="bg-red-100 border-l-4 border-red-500 text-red-800 p-4 rounded-lg mb-4">
+  <i class="fas fa-exclamation-triangle mr-2"></i>{{ message }}
+</div>
+{% endif %}
+
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+  <!-- Form Section -->
+  <div class="lg:col-span-1">
+    <form id="det-form" class="bg-white p-6 rounded-2xl card-shadow space-y-4">
+      {% if not model_ok %}
+      <div class="rounded-lg border border-yellow-300 bg-yellow-50 p-3 text-sm text-yellow-800">
+        <i class="fas fa-exclamation-triangle mr-2"></i>Prediction is currently unavailable because the detection model is not loaded.
+      </div>
+      {% endif %}
+      <div class="bg-gradient-to-r from-blue-50 to-indigo-50 p-4 rounded-lg mb-4">
+        <h3 class="font-bold text-blue-900 mb-3"><i class="fas fa-user-circle mr-2"></i>Patient Demographics</h3>
+        <div class="space-y-3">
+          <div>
+            <label class="block text-sm font-semibold text-gray-700 mb-1">👤 Age</label>
+            <input type="number" id="age" class="w-full border-2 border-blue-300 p-2 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition" min="0" max="120" placeholder="Enter age" />
+          </div>
+          <div>
+            <label class="block text-sm font-semibold text-gray-700 mb-1">⚖️ BMI</label>
+            <input type="number" id="bmi" class="w-full border-2 border-blue-300 p-2 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition" step="0.1" placeholder="Enter BMI" />
+          </div>
+          <div>
+            <label class="block text-sm font-semibold text-gray-700 mb-1">👨 Gender</label>
+            <select id="gender" class="w-full border-2 border-blue-300 p-2 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition">
+              <option value="" disabled selected>Select gender</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-gradient-to-r from-red-50 to-orange-50 p-4 rounded-lg mb-4">
+        <h3 class="font-bold text-red-900 mb-3"><i class="fas fa-heart mr-2"></i>Risk Factors</h3>
+        <div class="space-y-3">
+          <div>
+            <label class="block text-sm font-semibold text-gray-700 mb-1">🚬 Smoking</label>
+            <select id="smoke" class="w-full border-2 border-red-300 p-2 rounded-lg focus:border-red-500 focus:ring-2 focus:ring-red-200 outline-none transition">
+              <option value="" disabled selected>Select smoking status</option>
+              <option value="0">Never smoked</option>
+              <option value="1">Former smoker</option>
+              <option value="2">Current smoker</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-sm font-semibold text-gray-700 mb-1">👨‍👩‍👧 Family History</label>
+            <select id="family" class="w-full border-2 border-red-300 p-2 rounded-lg focus:border-red-500 focus:ring-2 focus:ring-red-200 outline-none transition">
+              <option value="" disabled selected>Select family history</option>
+              <option value="0">No</option>
+              <option value="1">Yes</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-sm font-semibold text-gray-700 mb-1">🏥 Pre-existing Conditions</label>
+            <select id="preexist" class="w-full border-2 border-red-300 p-2 rounded-lg focus:border-red-500 focus:ring-2 focus:ring-red-200 outline-none transition">
+              <option value="" disabled selected>Select condition status</option>
+              <option value="0">None</option>
+              <option value="1">Hypertension</option>
+              <option value="2">Diabetes</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-gradient-to-r from-green-50 to-emerald-50 p-4 rounded-lg mb-4">
+        <h3 class="font-bold text-green-900 mb-3"><i class="fas fa-apple-alt mr-2"></i>Nutrition</h3>
+        <div class="grid grid-cols-2 gap-2 text-xs">
+          <div>
+            <label class="block font-semibold text-gray-700 mb-1">Carbs (g)</label>
+            <input type="number" id="carbs" class="w-full border-2 border-green-300 p-2 rounded-lg focus:border-green-500 outline-none transition" step="1" placeholder="Carbs (g)" />
+          </div>
+          <div>
+            <label class="block font-semibold text-gray-700 mb-1">Protein (g)</label>
+            <input type="number" id="protein" class="w-full border-2 border-green-300 p-2 rounded-lg focus:border-green-500 outline-none transition" step="1" placeholder="Protein (g)" />
+          </div>
+          <div>
+            <label class="block font-semibold text-gray-700 mb-1">Fat (g)</label>
+            <input type="number" id="fat" class="w-full border-2 border-green-300 p-2 rounded-lg focus:border-green-500 outline-none transition" step="1" placeholder="Fat (g)" />
+          </div>
+          <div>
+            <label class="block font-semibold text-gray-700 mb-1">Vit A (IU)</label>
+            <input type="number" id="vitamin_a" class="w-full border-2 border-green-300 p-2 rounded-lg focus:border-green-500 outline-none transition" step="1" placeholder="Vitamin A (IU)" />
+          </div>
+          <div>
+            <label class="block font-semibold text-gray-700 mb-1">Vit C (mg)</label>
+            <input type="number" id="vitamin_c" class="w-full border-2 border-green-300 p-2 rounded-lg focus:border-green-500 outline-none transition" step="1" placeholder="Vitamin C (mg)" />
+          </div>
+          <div>
+            <label class="block font-semibold text-gray-700 mb-1">Iron (mg)</label>
+            <input type="number" id="iron" class="w-full border-2 border-green-300 p-2 rounded-lg focus:border-green-500 outline-none transition" step="0.1" placeholder="Iron (mg)" />
+          </div>
+        </div>
+      </div>
+
+      <div class="flex gap-2 pt-4">
+        <button type="submit" class="flex-1 gradient-danger text-white font-bold py-3 rounded-lg hover:shadow-lg transition transform hover:scale-105" {% if not model_ok %}disabled title="Detection model not loaded" style="opacity:0.6;cursor:not-allowed;"{% endif %}>
+          <i class="fas fa-bolt mr-2"></i>Predict Risk
+        </button>
+        <a href="/stage" class="flex-1 bg-gradient-to-r from-purple-500 to-purple-600 text-white font-bold py-3 rounded-lg text-center hover:shadow-lg transition transform hover:scale-105">
+          <i class="fas fa-arrow-right mr-2"></i>Stage
+        </a>
+      </div>
+    </form>
+  </div>
+
+  <!-- Results Section -->
+  <div class="lg:col-span-2 space-y-6">
+    <div id="result-card" class="bg-white p-6 rounded-2xl card-shadow hidden">
+      <div id="risk-badge" class="text-4xl font-bold mb-6 p-4 rounded-xl"></div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+        <div class="flex flex-col items-center justify-center">
+          <canvas id="gauge" width="200" height="160"></canvas>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold text-gray-800 mb-4"><i class="fas fa-chart-bar mr-2 text-purple-600"></i>Risk Factors</h3>
+          <canvas id="shap-bar" height="160"></canvas>
+        </div>
+      </div>
+      
+      <div class="bg-gradient-to-r from-blue-50 to-indigo-50 p-4 rounded-lg border-l-4 border-blue-500 mb-4">
+        <p class="text-sm text-gray-700"><i class="fas fa-info-circle text-blue-600 mr-2"></i>High-risk patients should proceed to Stage Assessment for detailed classification.</p>
+      </div>
+      
+      <a href="/stage" class="block bg-gradient-to-r from-purple-600 to-purple-700 text-white font-bold py-3 rounded-lg text-center hover:shadow-lg transition transform hover:scale-105">
+        <i class="fas fa-stethoscope mr-2"></i>Proceed to Stage Assessment
+      </a>
+    </div>
+
+    <div id="error-card" class="bg-gradient-to-r from-red-100 to-orange-100 border-l-4 border-red-500 text-red-800 p-4 rounded-lg card-shadow hidden">
+      <i class="fas fa-exclamation-triangle mr-2"></i><span id="error-text"></span>
+    </div>
+
+    <div class="bg-white p-6 rounded-2xl card-shadow">
+      <h3 class="text-lg font-bold text-gray-800 mb-3"><i class="fas fa-info-circle mr-2 text-blue-600"></i>Patient Risk Review</h3>
+      <p class="text-sm text-gray-600">Enter the clinical metrics and risk factors, then view the risk estimate. Proceed to stage classification for follow-up when appropriate.</p>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+const modelAvailable = {{ 'true' if model_ok else 'false' }};
+document.getElementById('det-form').addEventListener('submit', function(e){
+  e.preventDefault();
+  if (!modelAvailable) {
+    document.getElementById('error-text').textContent = 'Prediction is unavailable because the detection model is not loaded.';
+    document.getElementById('error-card').classList.remove('hidden');
+    document.getElementById('result-card').classList.add('hidden');
+    return;
+  }
+  const gender = document.getElementById('gender').value;
+  const smoke = document.getElementById('smoke').value;
+  const family = document.getElementById('family').value;
+  const preexist = document.getElementById('preexist').value;
+  if (!gender || smoke === '' || family === '' || preexist === '') {
+    document.getElementById('error-text').textContent = 'Please complete all dropdown selections before predicting.';
+    document.getElementById('error-card').classList.remove('hidden');
+    document.getElementById('result-card').classList.add('hidden');
+    return;
+  }
+  const payload = {
+    age: Number(document.getElementById('age').value),
+    bmi: Number(document.getElementById('bmi').value),
+    gender: gender,
+    smoke: Number(smoke),
+    family: Number(family),
+    preexist: Number(preexist),
+    carbs: Number(document.getElementById('carbs').value),
+    protein: Number(document.getElementById('protein').value),
+    fat: Number(document.getElementById('fat').value),
+    vitamin_a: Number(document.getElementById('vitamin_a').value),
+    vitamin_c: Number(document.getElementById('vitamin_c').value),
+    iron: Number(document.getElementById('iron').value),
+  };
+  
+  fetch('/api/predict-risk', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify(payload)
+  })
+  .then(r => r.json())
+  .then(data => {
+    if(data.error){
+      document.getElementById('error-text').textContent = data.error;
+      document.getElementById('error-card').classList.remove('hidden');
+      document.getElementById('result-card').classList.add('hidden');
+    } else {
+      showResult(data.probability * 100, data.importance);
+    }
+  })
+  .catch(e => {
+    document.getElementById('error-text').textContent = 'Prediction failed: ' + e;
+    document.getElementById('error-card').classList.remove('hidden');
+  });
+});
+
+let gaugeChart=null; let shapChart=null;
+function showResult(risk, contribs){
+  document.getElementById('result-card').classList.remove('hidden');
+  document.getElementById('error-card').classList.add('hidden');
+  const badge = document.getElementById('risk-badge');
+  const riskRound = Math.round(risk);
+  
+  if(risk>=50){ 
+    badge.innerHTML = `<i class="fas fa-exclamation-circle text-red-600 block mb-2"></i><span class="text-red-600">⚠️ HIGH RISK</span><div class="text-2xl text-red-700 font-bold">${riskRound}%</div>`; 
+    badge.className='p-4 rounded-xl bg-red-50 border-2 border-red-300 text-center'; 
+  }
+  else { 
+    badge.innerHTML = `<i class="fas fa-check-circle text-green-600 block mb-2"></i><span class="text-green-600">✅ LOW RISK</span><div class="text-2xl text-green-700 font-bold">${riskRound}%</div>`; 
+    badge.className='p-4 rounded-xl bg-green-50 border-2 border-green-300 text-center'; 
+  }
+  
+  // gauge
+  const ctx = document.getElementById('gauge').getContext('2d');
+  const colors = risk>=50 ? ['#ef4444','#fecaca'] : ['#10b981','#d1fae5'];
+  const data = { datasets: [{ data: [risk, 100-risk], backgroundColor: colors, hoverBackgroundColor: colors, borderWidth:0 }] };
+  if(gaugeChart) gaugeChart.destroy();
+  gaugeChart = new Chart(ctx, { type:'doughnut', data: data, options:{ rotation: -90 * Math.PI/180, circumference: 180 * Math.PI/180, cutout: '70%', plugins:{tooltip:{enabled:false}, legend:{display:false}} } });
+
+  // SHAP bar
+  const labels = Object.keys(contribs).slice(0, 5);
+  const values = labels.map(k=>Math.abs(Math.round(contribs[k] * 10)));
+  const colors2 = labels.map(k=> contribs[k]>0 ? '#f97316' : '#3b82f6');
+  const ctx2 = document.getElementById('shap-bar').getContext('2d');
+  if(shapChart) shapChart.destroy();
+  shapChart = new Chart(ctx2, { type:'bar', data:{ labels: labels, datasets:[{ data: values, backgroundColor: colors2, borderRadius: 8 }] }, options:{ indexAxis:'y', plugins:{legend:{display:false}}, scales:{x:{beginAtZero:true}} } });
+}
+</script>
+
+{% endblock %}

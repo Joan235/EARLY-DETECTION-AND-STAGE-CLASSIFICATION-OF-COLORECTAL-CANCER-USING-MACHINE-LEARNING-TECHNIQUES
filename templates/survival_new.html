@@ -1,0 +1,123 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="mb-6">
+  <h1 class="text-4xl font-bold bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 bg-clip-text text-transparent mb-2">📊 Survival Analytics Dashboard</h1>
+  <p class="text-gray-600">Population-level insights from {{ stats|length }} patient records</p>
+</div>
+
+<!-- Section A: Key Stats Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+  <div class="bg-gradient-to-br from-red-400 to-red-600 text-white p-6 rounded-2xl card-shadow card-hover">
+    <div class="flex items-center justify-between">
+      <div>
+        <p class="text-red-100 text-sm font-semibold">Overall Recurrence Rate</p>
+        <p class="text-3xl font-bold mt-2">{{ '%.1f' % (stats.recurrence_rate*100) if stats.recurrence_rate else 'N/A' }}%</p>
+      </div>
+      <i class="fas fa-chart-line text-red-200 text-4xl opacity-30"></i>
+    </div>
+  </div>
+
+  <div class="bg-gradient-to-br from-orange-400 to-orange-600 text-white p-6 rounded-2xl card-shadow card-hover">
+    <div class="flex items-center justify-between">
+      <div>
+        <p class="text-orange-100 text-sm font-semibold">Median RFS</p>
+        <p class="text-3xl font-bold mt-2">{{ stats.median_rfs_months or 'N/A' }}</p>
+        <p class="text-orange-100 text-xs">months</p>
+      </div>
+      <i class="fas fa-hourglass-half text-orange-200 text-4xl opacity-30"></i>
+    </div>
+  </div>
+
+  <div class="bg-gradient-to-br from-emerald-400 to-emerald-600 text-white p-6 rounded-2xl card-shadow card-hover">
+    <div class="flex items-center justify-between">
+      <div>
+        <p class="text-emerald-100 text-sm font-semibold">12-Month RFS</p>
+        <p class="text-3xl font-bold mt-2">{{ '%.1f' % (stats.rfs_12m*100) if stats.rfs_12m else 'N/A' }}%</p>
+      </div>
+      <i class="fas fa-calendar-check text-emerald-200 text-4xl opacity-30"></i>
+    </div>
+  </div>
+
+  <div class="bg-gradient-to-br from-blue-400 to-blue-600 text-white p-6 rounded-2xl card-shadow card-hover">
+    <div class="flex items-center justify-between">
+      <div>
+        <p class="text-blue-100 text-sm font-semibold">24-Month RFS</p>
+        <p class="text-3xl font-bold mt-2">{{ '%.1f' % (stats.rfs_24m*100) if stats.rfs_24m else 'N/A' }}%</p>
+      </div>
+      <i class="fas fa-calendar text-blue-200 text-4xl opacity-30"></i>
+    </div>
+  </div>
+</div>
+
+<!-- Section B: KM Curves -->
+<div class="bg-white p-6 rounded-2xl card-shadow card-hover mb-8">
+  <div class="flex items-center justify-between mb-6">
+    <div>
+      <h2 class="text-2xl font-bold text-gray-800"><i class="fas fa-wave-square mr-2 text-purple-600"></i>Kaplan-Meier Survival Curves</h2>
+      <p class="text-sm text-gray-500 mt-1">Recurrence-free survival stratified by clinical factor</p>
+    </div>
+    <div class="flex items-center gap-2">
+      <label class="text-sm font-semibold text-gray-700">View by:</label>
+      <select id="km-select" class="border-2 border-purple-300 rounded-lg p-2 focus:border-purple-500 outline-none transition" onchange="switchKM()">
+        {% for g in km_groups %}
+          <option value="km_{{ g }}.png">{{ g.replace('_', ' ').title() }}</option>
+        {% endfor %}
+      </select>
+    </div>
+  </div>
+  <div class="bg-gray-50 p-4 rounded-lg border-2 border-dashed border-gray-300">
+    <img id="km-img" src="/static/plots/km_stage.png" alt="KM plot" class="w-full rounded-lg" />
+  </div>
+</div>
+
+<!-- Section C: Cox Forest Plot -->
+<div class="bg-white p-6 rounded-2xl card-shadow card-hover mb-8">
+  <h2 class="text-2xl font-bold text-gray-800 mb-6"><i class="fas fa-project-diagram mr-2 text-indigo-600"></i>Hazard Ratio Forest Plot</h2>
+  <p class="text-sm text-gray-600 mb-4">Factors that increase (red) or decrease (blue) recurrence risk from Cox PH regression</p>
+  <div class="bg-gray-50 p-4 rounded-lg border-2 border-dashed border-gray-300">
+    <img src="/static/plots/cox_forest.png" alt="Cox forest" class="w-full rounded-lg" />
+  </div>
+</div>
+
+<!-- Section D: Treatment Combinations -->
+<div class="bg-white p-6 rounded-2xl card-shadow card-hover mb-8">
+  <h2 class="text-2xl font-bold text-gray-800 mb-6"><i class="fas fa-prescription-bottle-alt mr-2 text-teal-600"></i>Treatment Combination Outcomes</h2>
+  <p class="text-sm text-gray-600 mb-4">Best performing combinations of Chemo, Radio, and Surgery</p>
+  <div class="overflow-x-auto">
+    <div class="bg-gradient-to-r from-teal-50 to-cyan-50 p-4 rounded-lg">
+      {{ treatment_table|safe }}
+    </div>
+  </div>
+</div>
+
+<!-- Section E: Subgroup Summary -->
+<div class="bg-white p-6 rounded-2xl card-shadow card-hover">
+  <h2 class="text-2xl font-bold text-gray-800 mb-6"><i class="fas fa-users-cog mr-2 text-pink-600"></i>Subgroup Recurrence Summary</h2>
+  <p class="text-sm text-gray-600 mb-4">Recurrence rates at 12, 24, and 48 months broken down by demographic and clinical factors</p>
+  <div class="overflow-x-auto">
+    <div class="bg-gradient-to-r from-pink-50 to-red-50 p-4 rounded-lg">
+      {{ subgroup_table|safe }}
+    </div>
+  </div>
+</div>
+
+<style>
+  .bg-gradient-to-r { background-image: linear-gradient(to right, var(--tw-gradient-stops)); }
+  .from-purple-600 { --tw-gradient-from: rgb(147, 51, 234); }
+  .via-pink-500 { --tw-gradient-via: rgb(236, 72, 153); }
+  .to-red-500 { --tw-gradient-to: rgb(239, 68, 68); }
+  table { width: 100%; border-collapse: collapse; font-size: 0.875rem; }
+  th { background: rgba(255,255,255,0.5); padding: 12px; text-align: left; font-weight: 600; border-bottom: 2px solid rgba(0,0,0,0.1); }
+  td { padding: 10px 12px; border-bottom: 1px solid rgba(0,0,0,0.05); }
+  tr:hover { background: rgba(255,255,255,0.8); }
+</style>
+
+<script>
+function switchKM(){
+  const sel = document.getElementById('km-select');
+  const img = document.getElementById('km-img');
+  img.src = '/static/plots/' + sel.value;
+}
+</script>
+
+{% endblock %}

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CRC Analytics</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+      .gradient-primary { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+      .gradient-danger { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); }
+      .gradient-success { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); }
+      .card-shadow { box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+      .card-hover { transition: transform 0.3s, box-shadow 0.3s; }
+      .card-hover:hover { transform: translateY(-5px); box-shadow: 0 15px 40px rgba(0,0,0,0.15); }
+    </style>
+  </head>
+  <body class="bg-gradient-to-br from-slate-50 to-slate-100 text-gray-900">
+    <nav class="bg-white shadow-lg border-b-4 border-purple-600">
+      <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+        <div class="flex items-center space-x-1">
+          <span class="text-2xl font-bold gradient-primary bg-clip-text text-transparent">🏥 CRC Analytics</span>
+        </div>
+        <div class="flex items-center space-x-6">
+          <a href="/detection" class="{{ 'font-semibold text-purple-700' if request.path.startswith('/detection') or request.path == '/' else 'text-sm text-gray-600' }} hover:text-purple-700 transition">🔍 Risk Detection</a>
+          <a href="/stage" class="{{ 'font-semibold text-purple-700' if request.path.startswith('/stage') else 'text-sm text-gray-600' }} hover:text-purple-700 transition">📈 Stage Classification</a>
+          <a href="/survival" class="{{ 'font-semibold text-purple-700' if request.path.startswith('/survival') else 'text-sm text-gray-600' }} hover:text-purple-700 transition">📊 Survival Analysis</a>
+        </div>
+        <div class="text-xs text-gray-500 px-3 py-1 rounded-full">Clinical analytics dashboard</div>
+      </div>
+    </nav>
+    <main class="max-w-7xl mx-auto p-6">
+      {% with messages = get_flashed_messages() %}
+        {% if messages %}
+          <div class="mb-6">
+            {% for m in messages %}
+              <div class="bg-gradient-to-r from-yellow-100 to-orange-100 border-l-4 border-orange-500 text-orange-800 p-4 rounded-lg card-shadow font-medium">
+                <i class="fas fa-exclamation-circle mr-2"></i>{{ m }}
+              </div>
+            {% endfor %}
+          </div>
+        {% endif %}
+      {% endwith %}
+      {% block content %}{% endblock %}
+    </main>
+  </body>
+</html>
