@@ -33,6 +33,14 @@ python app.py
 
 Open http://localhost:5000 in your browser.
 
+If you don't want to commit model binaries to the repository (recommended), store trained models externally and download them before running the app. A helper script is provided:
+
+```bash
+python scripts/download_models.py
+```
+
+Edit `scripts/download_models.py` to set the URLs for the `MODELS` dictionary (replace the placeholder strings with your model file URLs). You can upload models to cloud storage (S3, Google Drive, or Hugging Face) and paste the public URLs into the script.
+
 ## Architecture
 
 - `app.py` – Flask routes, model loading, and API endpoints (`/api/predict-risk`, `/api/predict-stage`)
