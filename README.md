@@ -1,6 +1,6 @@
 # CRC Analytics Flask App
 
-Lightweight Flask app with Tailwind UI for CRC detection, stage classification, and a survival analysis dashboard using trained ML models.
+A clinical decision-support web application for colorectal cancer (CRC) prediction and survival analysis. The project combines machine learning, interactive dashboards, and a user-friendly Flask interface to help estimate CRC risk, classify likely cancer stage, and visualize survival outcomes using patient-level clinical data.
 
 ## Features
 
